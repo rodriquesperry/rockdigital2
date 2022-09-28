@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,700;1,800&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,100;1,400&family=News+Cycle:wght@700&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
+  color: rgb(34, 21, 6);
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
