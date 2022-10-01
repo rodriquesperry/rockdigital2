@@ -1,0 +1,526 @@
+.home-container {
+  height: 100%;
+}
+
+.main-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.main-container h2 span {
+  background-color: rgb(255, 183, 0);
+  color: #fff;
+}
+
+.main-container br {
+  display: none;
+}
+
+.main-container hr {
+  width: 30%;
+  border: 3px solid rgb(255, 183, 0);
+  margin: 1rem 0;
+}
+
+.full-serivice-container,
+.build-relationships-container,
+.reviews-container,
+.homepage-portfolio-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-serivice-container,
+.build-relationships-container,
+.reviews-container,
+.homepage-portfolio-container p {
+  margin-top: 1.3rem;
+  padding: 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.divs {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.div1 {
+  background-image: url('../../assets/web-design.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.div2 {
+  background-image: url('../../assets/web-maintenance.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.div3 {
+  background-image: url('../../assets/web-improvement.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.div-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(34, 21, 6, 0.548);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.div1 h1 {
+  top: 35%;
+}
+
+.divs h1,
+.divs h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#development {
+  top: 70%;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover .div-content {
+  height: 100%;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.skill-set {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 1fr;
+  place-items: center;
+  row-gap: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-set img {
+  width: 25%;
+}
+
+.skill-set p {
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.review p {
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.quote {
+  font-family: 'News Cycle', sans-serif;
+  font-style: none;
+  font-size: 2rem;
+  color: rgb(255, 183, 0);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.review-image {
+  max-width: 50%;
+  border-radius: 50%;
+  border: 0.1px solid rgb(34, 21, 6);
+}
+
+.portfolio-item-2 {
+  text-align: center;
+  position: relative;
+  width: 70%;
+}
+
+.portfolio-item-2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 8px solid #223d58;
+  border-radius: 2px;
+}
+
+.portfolio-item-2 .img-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #0f1d2b;
+}
+
+.ready-container {
+  background-color: rgb(242, 242, 242);
+  width: 80%;
+  height: 500px;
+  margin: auto;
+}
+
+.global-hr {
+  margin: 0 auto 1rem;
+}
+
+.ready-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: calc(10% - 40px);
+}
+
+.parallax1 {
+  background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-container {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .home-container .carousel .carousel-inner {
+    max-height: 500px;
+  }
+
+  .main-container hr {
+    width: 10%;
+    border: 3px solid rgb(255, 183, 0);
+    margin: 1rem 0;
+  }
+
+  .main-container br {
+    display: block;
+  }
+
+  .full-serivice-container,
+  .build-relationships-container,
+  .reviews-container,
+  .homepage-portfolio-container {
+    margin: 6rem 0;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .full-serivice-container h2 {
+    margin-top: 6rem;
+  }
+
+  .full-serivice-container,
+  .build-relationships-container,
+  .reviews-container,
+  .homepage-portfolio-container p {
+    margin-top: 1.3rem;
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .build-relationships-container {
+    margin: 9rem 0 6rem;
+  }
+
+  .divs {
+    width: 100%;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .div1 {
+    width: 100%;
+    height: 300px;
+  }
+  .div2 {
+    width: 100%;
+    height: 300px;
+  }
+  .div3 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .divs h1,
+  .divs h3 {
+    font-size: 3rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .skill-set {
+    display: grid;
+    justify-content: center;
+    row-gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
+  .skill-set img {
+    width: 20%;
+  }
+
+  .skill-set h4 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skill-set p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+
+  .parallax1 {
+    background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+  }
+
+  .reviews {
+    margin: 2rem 0;
+  }
+
+  .reviews-container h2 {
+    margin-top: 6rem;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .review p {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 2rem;
+    padding: 0rem;
+    margin: 3rem 0;
+  }
+  .review .quote {
+    font-size: 3rem;
+  }
+  .review .image-container {
+    display: flex;
+  }
+  .review-image {
+    display: flex;
+    align-items: center;
+    max-width: 98%;
+    border: 0.1px solid rgb(34, 21, 6);
+  }
+
+  .parallax2 {
+    background-image: url('../../assets/placeholder.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+  }
+
+  .homepage-portfolio-container h2 {
+    margin-top: 2rem;
+  }
+
+  .homepage-portfolio-container hr {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 0.1rem;
+    padding: 1rem 0 5rem 0;
+    grid-column-gap: 12px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    margin-top: 5rem;
+  }
+  .portfolio-item {
+    text-align: center;
+    position: relative;
+    margin-top: 14rem;
+    width: 75%;
+  }
+
+  .portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1.5px solid rgb(34, 21, 6);
+    border-radius: 2px;
+  }
+
+  .portfolio-item .img-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(34, 21, 6, 0.904);
+  }
+
+  .portfolio-item h4 {
+    margin: 1rem;
+  }
+
+  .portfolio-item-2 {
+    text-align: center;
+    position: relative;
+    width: 75%;
+  }
+  .portfolio-item-2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1.5px solid rgb(34, 21, 6);
+    border-radius: 2px;
+  }
+
+  .portfolio-item-2 .img-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(34, 21, 6, 0.904);
+  }
+
+  .portfolio-item-2 h4 {
+    margin: 1rem;
+  }
+
+  .portfolio-item a:hover img {
+    transform: scale(0.5);
+    transition: 0.9s ease;
+  }
+
+  .portfolio-item-2 a:hover .img-info {
+    opacity: 1;
+  }
+
+  .portfolio-item-2 a:hover img {
+    transform: scale(0.5);
+    transition: 0.9s ease;
+  }
+
+  .portfolio-item a:hover .img-info {
+    opacity: 1;
+  }
+
+  .portfolio-items .text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    --webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .portfolio-items h3 {
+    padding: 0 1rem;
+  }
+
+  .ready-container {
+    margin-bottom: 5rem;
+  }
+
+  .ready-header {
+    padding-top: 12%;
+  }
+
+  .ready-header p {
+    padding: 0 12rem;
+  }
+
+  .ready-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .ready-container .btn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}

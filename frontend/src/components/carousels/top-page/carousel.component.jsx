@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+
 import Carousel from 'react-bootstrap/Carousel';
 
-import building from '../../../assets/brwn.png';
 import workdesk from '../../../assets/pexels-hasan-albari-1229861.jpeg';
 import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
 import WebDesign from '../../../assets/website-design.jpg';
 
-import './carousel.styles.scss';
+// import '../../../scss/carousel.styles.scss';
+import './carousel.styles.css';
 
 const CarouselTopPage = () => {
   return (
     <div>
-      <Carousel interval={7000} fade>
+      <Carousel interval={7300} fade>
         <Carousel.Item>
           <img
             className='d-block w-100 img-fluid web-design'
@@ -26,7 +28,7 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>Custom websites designed with your customers in mind.</p>
-              <button className='btn'>LEARN MORE</button>
+              <Link className='btn'>LEARN MORE</Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -45,11 +47,8 @@ const CarouselTopPage = () => {
                   <span>SUPERIORITY</span>
                 </h3>
               </div>
-              <p>
-                Outperform your competitors with cutting-edge web designs
-                and proven processes.
-              </p>
-              <button className='btn'>LEARN MORE</button>
+              <p>Outperform your competitors with proven processes.</p>
+              <Link className='btn'>LEARN MORE</Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -69,7 +68,7 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>Customers will love to interact with your business online.</p>
-              <button className='btn'>LEARN MORE</button>
+              <Link className='btn'>LEARN MORE</Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

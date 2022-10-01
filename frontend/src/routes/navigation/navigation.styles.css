@@ -1,0 +1,51 @@
+.navbar {
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.navbar .navbar-brand {
+  transition: all linear 0.8s;
+  width: 20%;
+}
+
+.navbar .resize {
+  transition: all linear 0.6s;
+  width: 14%;
+  font-size-adjust: 1rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: rgb(34, 21, 6);
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(207, 168, 68);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar {
+    font-weight: bold;
+    background-color: #fff;
+  }
+
+  .navbar .navbar-brand {
+    transition: all linear 0.6s;
+    width: 10%;
+  }
+
+  .navbar .resize {
+    transition: all linear 0.6s;
+    width: 4%;
+    font-size-adjust: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: rgb(34, 21, 6);
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: rgb(207, 168, 68);
+  }
+}

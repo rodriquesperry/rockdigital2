@@ -1,17 +1,20 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import Button from 'react-bootstrap/Button';
+import { LinkContainer } from 'react-router-bootstrap';
+
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+import Powered from '../../components/powered foooter/powered.component';
+
 import logo from '../../assets/RockDigitalLogo-450px.jpeg';
 
-import './navigation.styles.scss';
+// import '../../scss/navigation.styles.scss';
+import './navigation.styles.css';
 
 const Navigation = () => {
   useEffect(() => {
@@ -35,9 +38,11 @@ const Navigation = () => {
     <>
       <Navbar expand='lg' className='mb-3 sticky-top'>
         <Container fluid>
-          <Navbar.Brand href='#'>
-            <img src={logo} alt='' className='img-fluid' />
-          </Navbar.Brand>
+          <LinkContainer to='/'>
+            <Navbar.Brand>
+              <img src={logo} alt='' className='img-fluid' />
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Offcanvas
             id='offcanvasNavbar-expand'
@@ -55,25 +60,42 @@ const Navigation = () => {
                   title='WHO WE SERVE'
                   id='offcanvasNavbarDropdown-expand'
                 >
-                  <NavDropdown.Item href='#action3'>Action</NavDropdown.Item>
-                  <NavDropdown.Item href='#action4'>
-                    Another action
-                  </NavDropdown.Item>
+                  <LinkContainer to='/veteran-owned-business-website'>
+                    <NavDropdown.Item>
+                      Veteran Owned Businesses
+                    </NavDropdown.Item>
+                  </LinkContainer>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href='#action5'>
-                    Something else here
-                  </NavDropdown.Item>
+                  <LinkContainer to='/church-website'>
+                    <NavDropdown.Item>Churches</NavDropdown.Item>
+                  </LinkContainer>
+                  <NavDropdown.Divider />
+                  <LinkContainer to='/small-to-large-business-website'>
+                    <NavDropdown.Item>
+                      Small to Large Businesses
+                    </NavDropdown.Item>
+                  </LinkContainer>
                 </NavDropdown>
-                <Nav.Link href='#action2'>ABOUT US</Nav.Link>
-                <Nav.Link href='#action3'>PORTFOLIO</Nav.Link>
-                <Nav.Link href='#action3'>SERVICES</Nav.Link>
-                <Nav.Link href='#action3'>BLOG</Nav.Link>
+                <LinkContainer to='/about'>
+                  <Nav.Link>ABOUT US</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/portfolio'>
+                  <Nav.Link>PORTFOLIO</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/services'>
+                  <Nav.Link>SERVICES</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/blog'>
+                  <Nav.Link>BLOG</Nav.Link>
+                </LinkContainer>
+                <Nav.Link href='/contact'>CONTACT US</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
       <Outlet />
+      <Powered />
     </>
   );
 };

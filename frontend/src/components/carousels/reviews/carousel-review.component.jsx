@@ -2,7 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import me from '../../../assets/IMG-1561 copy 2.png';
 
-import './carousel-review.styles.scss';
+// import '../../../scss/carousel-review.styles.scss';
+import './carousel-review.styles.css';
 
 const CarouselReview = () => {
   return (
