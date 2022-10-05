@@ -13,7 +13,7 @@ const FeaturedPost = () => {
     const getPosts = async () => {
       await axios
         .get('http://localhost:1337/api/posts?populate=*')
-        .then((data) => setPosts(data.data))
+        .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));
     };
     getPosts();
@@ -25,8 +25,8 @@ const FeaturedPost = () => {
 
   return (
     <>
-      {posts.data &&
-        posts.data.map((post, i) => {
+      {posts &&
+        posts.map((post, i) => {
           if (post.attributes.featured) {
             return (
               <Col xs={(6, { order: 1 })} className='featured-container'>
@@ -45,8 +45,8 @@ const FeaturedPost = () => {
           }
         })}
         <Col xs={3} lg={{ order: 2 }}>
-          {posts.data &&
-            posts.data.map((post, i) => {
+          {posts &&
+            posts.map((post, i) => {
               if (!post.attributes.featured && i <= 1)
                 return (
                   <Card key={i} className='headline-posts order-2'>

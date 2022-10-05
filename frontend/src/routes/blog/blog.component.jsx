@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Row from 'react-bootstrap/Row';
 
 import FeaturedPost from '../../components/featured-blog-post/FeaturedPost.component';
-import BlogPost from '../../components/blog-post/BlogPost.component';
+import BlogPosts from '../../components/blog-posts/BlogPosts.component';
 
 import './blog.styles.css';
 
@@ -25,7 +25,7 @@ const Blog = () => {
         <FeaturedPost />
       </Row>
       <Row>
-        <BlogPost />
+        <BlogPosts />
       </Row>
     </div>
   );

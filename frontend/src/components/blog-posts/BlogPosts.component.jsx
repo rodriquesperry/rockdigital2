@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 import axios from 'axios';
 
-import './BlogPost.styles.css';
+import './BlogPosts.styles.css';
 
 const BlogPost = () => {
   const [error, setError] = useState(null);
@@ -14,7 +14,7 @@ const BlogPost = () => {
     const getPosts = async () => {
       await axios
         .get('http://localhost:1337/api/posts?populate=*')
-        .then((data) => setPosts(data.data))
+        .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));
     };
     getPosts();
@@ -25,8 +25,8 @@ const BlogPost = () => {
   }
   return (
     <div className='posts'>
-      {posts.data &&
-        posts.data.map((post, i) => {
+      {posts &&
+        posts.map((post, i) => {
           if (!post.attributes.featured && i >= 2) {
             return (
               <Col xs={3} className='post-col'>
