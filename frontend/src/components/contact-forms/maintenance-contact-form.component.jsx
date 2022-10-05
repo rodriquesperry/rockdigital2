@@ -6,7 +6,7 @@ const WebMaintenanceForm = () => {
     h._HB_.pid = i;
     t = b.createElement(s);
     t.type = 'text/javascript';
-    t.async = !0;
+    // t.async = !0;
     t.src = n;
     e = b.getElementsByTagName(s)[0];
     e.parentNode.insertBefore(t, e);
@@ -20,7 +20,7 @@ const WebMaintenanceForm = () => {
 
   return (
     <div>
-      <div class='hb-p-63337fd5bdae0418290d352b-3'></div>
+      <div className='hb-p-63337fd5bdae0418290d352b-3'></div>
       <img
         style={{ display: 'none' }}
         src='https://www.honeybook.com/p.png?pid=63337fd5bdae0418290d352b'

@@ -185,7 +185,7 @@ const Home = () => {
               </p>
             </div>
             <div className='ready-btn'>
-              <button className='btn btn-warning'>Click Here</button>
+              <button className='btn'>Click Here</button>
             </div>
           </div>
         </div>

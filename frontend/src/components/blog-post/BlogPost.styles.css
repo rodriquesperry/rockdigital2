@@ -1,0 +1,15 @@
+.posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-col {
+  margin: 0 0 5rem 0;
+}
+
+.posts .card {
+    width: 94%;
+  height: 350px;
+}
