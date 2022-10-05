@@ -37,7 +37,8 @@ const Home = () => {
               of skillful web design and marketing experts so you can be
               confident that you’ll always get the perfect website that fits
               your style and budget. Let’s create you a jaw-dropping designed,
-              mobile ready, and easy to use website that converts like crazy.
+              mobile ready, and easy to use website that your customers will
+              love to use and converts like crazy.
             </p>
           </div>
 
@@ -45,7 +46,6 @@ const Home = () => {
             <div className='div1'>
               <div className='div-content'>
                 <h1>WEBSITE DESIGN</h1>
-
                 <h3 id='development'>& DEVELOPMENT</h3>
               </div>
             </div>
@@ -123,7 +123,11 @@ const Home = () => {
             <hr />
             <div className='portfolio-items'>
               <div className='portfolio-item'>
-                <a href='https://genuinellc.com' target='_blank' rel="noreferrer">
+                <a
+                  href='https://genuinellc.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <img src={genuine} alt='' className='img-fluid' />
                   <div className='img-info'>
                     <div className='text'>
@@ -135,7 +139,11 @@ const Home = () => {
                 <h4>Genuine Remodeling and Restoration LLC</h4>
               </div>
               <div className='portfolio-item-2'>
-                <a href='https://chateau-dijon.com' target='_blank' rel="noreferrer">
+                <a
+                  href='https://chateau-dijon.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <img src={chateauDijon} alt='' className='img-fluid' />
                   <div className='img-info'>
                     <div className='text'>
@@ -150,7 +158,7 @@ const Home = () => {
                 <a
                   href='https://thebeautyambassador.com/spa-website-design'
                   target='_blank'
-                  rel="noreferrer"
+                  rel='noreferrer'
                 >
                   <img src={spa} alt='' className='img-fluid' />
                   <div className='img-info'>

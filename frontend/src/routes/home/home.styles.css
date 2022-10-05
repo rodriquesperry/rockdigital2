@@ -89,10 +89,6 @@
   transition: 0.5s ease;
 }
 
-.div1 h1 {
-  top: 35%;
-}
-
 .divs h1,
 .divs h3 {
   color: #fff;
@@ -106,8 +102,12 @@
   text-align: center;
 }
 
+.div1 h1 {
+  top: 31%;
+}
+
 #development {
-  top: 70%;
+  top: 68%;
 }
 
 .div1:hover,
@@ -231,7 +231,6 @@
 .ready-btn .btn {
   color: #fff;
   background-color: rgb(255, 183, 0);
-
 }
 
 .ready-btn .btn:hover {
