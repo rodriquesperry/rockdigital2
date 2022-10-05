@@ -1,0 +1,77 @@
+@media (hover: hover) and (pointer: fine) {
+  .blog-post-header {
+    width: 100%;
+    position: relative;
+    margin-bottom: 7rem;
+  }
+
+  .bog-post-header-background {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #f0cd7b;
+  }
+
+  .header-img-and-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-content-container {
+    display: flex;
+    width: 94.4%;
+    position: absolute;
+    top: 5.5%;
+  }
+
+  .header-content-container img {
+    width: 85%;
+    position: relative;
+    left: 2.5rem;
+    border: 3px solid #fff;
+  }
+
+  .header-content-container p {
+    padding-right: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .header-content-container .header-text {
+    margin-top: 2.5rem;
+  }
+
+  .author-info {
+    display: flex;
+    width: 49.5%;
+    position: relative;
+    left: 35.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .info-pic {
+    display: flex;
+    justify-content: end;
+  }
+
+  .author-info img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .info-text {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .info-text h5,
+  h6,
+  small {
+    margin: 0 0.5rem;
+  }
+
+  .blog-post {
+    padding: 0 10rem;
+    font-size: 1.3rem;
+  }
+}

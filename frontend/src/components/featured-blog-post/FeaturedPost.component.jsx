@@ -37,9 +37,18 @@ const FeaturedPost = ({ children }) => {
                     src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
                   />
                   <Card.Body>
-                    <Card.Title>{post.attributes.Title}</Card.Title>
+                    <Card.Title>
+                      {post.attributes.Title.length > 60
+                        ? `${post.attributes.Title.slice(0, 60)}...`
+                        : post.attributes.Title}
+                    </Card.Title>
                     <Card.Text>
-                      {post.attributes.short_description.substring(0, 150)}...
+                      {post.attributes.short_description.length > 150
+                        ? `${post.attributes.short_description.substring(
+                            0,
+                            150
+                          )}...`
+                        : post.attributes.short_description}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -58,9 +67,18 @@ const FeaturedPost = ({ children }) => {
                     src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
                   />
                   <Card.Body>
-                    <Card.Title>{post.attributes.Title}</Card.Title>
+                    <Card.Title>
+                      {post.attributes.Title.length > 38
+                        ? `${post.attributes.Title.slice(0, 38)}...`
+                        : post.attributes.Title}
+                    </Card.Title>
                     <Card.Text>
-                      {post.attributes.short_description.slice(0, 60)}...
+                      {post.attributes.short_description.length > 40
+                        ? `${post.attributes.short_description.substring(
+                            0,
+                            40
+                          )}...`
+                        : post.attributes.short_description}
                     </Card.Text>
                   </Card.Body>
                 </Card>
