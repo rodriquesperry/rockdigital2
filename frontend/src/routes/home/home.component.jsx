@@ -79,29 +79,30 @@ const Home = () => {
               <img src={rec} alt='' />
               <h4>Custom Design</h4>
               <p>
-                Custom website design and development. A great looking,
-                mobile-ready, and user friendly website that is unique to your
-                brand and optimized for your users and search engines.
+                Get found in search engines and loved by customers with custom
+                website design and development. A great looking, mobile-ready,
+                and user friendly website that is unique to your brand and
+                optimized for your users as well as search engines.
               </p>
             </div>
             <div className='skill-set'>
               <img src={rec} alt='' />
               <h4>Responsive Layout</h4>
               <p>
-                Have your customers interact with your business on their own
-                terms. Our websites are mobile ready so your customers can
-                browse on the go. They adjust to different screen sizes and
-                still look amazing
+                From desktop to mobile, have your customers interact with your
+                business on their own terms. Our websites are mobile ready so
+                your customers can browse on the go. They adjust to different
+                screen sizes while still looking amazing.
               </p>
             </div>
             <div className='skill-set'>
               <img src={rec} alt='' />
               <h4>Search Engine Optimized</h4>
               <p>
-                Our websites are built with SEO in mind and to get you
-                visibility in search engine results pages. This means more
-                visitors to your site, more clicks and more purchases from your
-                business.
+                Your website finally doing what it's designed to. Our websites
+                are built with SEO in mind and will get you greater visibility
+                in search engine results pages. This means more visitors to your
+                site, more clicks and more purchases from your business.
               </p>
             </div>
           </div>
@@ -187,9 +188,11 @@ const Home = () => {
               <h2>WE'RE HERE TO HELP YOU:</h2>
               <hr />
               <p>
-                Ready to step your business' web game up? It would be our
-                pleasure to create a custom website that represents your brand
-                and increases your overall return on investment.
+                Ready to step your business' web game up? <br /> It would be our
+                pleasure to create a custom website design experience that
+                represents your brand, communicates your brand message and
+                generates your business more leads which, in turn, increases your overall
+                return on investment.
               </p>
             </div>
             <div className='ready-btn'>

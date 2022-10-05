@@ -37,7 +37,7 @@ const BlogPost = () => {
                   />
                   <Card.Body>
                     <Card.Title>{post.attributes.Title}</Card.Title>
-                    <Card.Text>{post.attributes.short_description}</Card.Text>
+                    <Card.Text>{post.attributes.short_description.slice(0, 70)}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

@@ -5,9 +5,10 @@ import axios from 'axios';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-const FeaturedPost = () => {
+const FeaturedPost = ({ children }) => {
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
+  let shortDescription = '';
 
   useEffect(() => {
     const getPosts = async () => {
@@ -37,31 +38,35 @@ const FeaturedPost = () => {
                   />
                   <Card.Body>
                     <Card.Title>{post.attributes.Title}</Card.Title>
-                    <Card.Text>{post.attributes.short_description}</Card.Text>
+                    <Card.Text>
+                      {post.attributes.short_description.substring(0, 150)}...
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
             );
           }
         })}
-        <Col xs={3} lg={{ order: 2 }}>
-          {posts &&
-            posts.map((post, i) => {
-              if (!post.attributes.featured && i <= 1)
-                return (
-                  <Card key={i} className='headline-posts order-2'>
-                    <Card.Img
-                      variant='top'
-                      src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
-                    />
-                    <Card.Body>
-                      <Card.Title>{post.attributes.Title}</Card.Title>
-                      <Card.Text>{post.attributes.short_description}</Card.Text>
-                    </Card.Body>
-                  </Card>
-                );
-            })}
-        </Col>
+      <Col xs={3} lg={{ order: 2 }}>
+        {posts &&
+          posts.map((post, i) => {
+            if (!post.attributes.featured && i <= 1)
+              return (
+                <Card key={i} className='headline-posts order-2'>
+                  <Card.Img
+                    variant='top'
+                    src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
+                  />
+                  <Card.Body>
+                    <Card.Title>{post.attributes.Title}</Card.Title>
+                    <Card.Text>
+                      {post.attributes.short_description.slice(0, 60)}...
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              );
+          })}
+      </Col>
     </>
   );
 };

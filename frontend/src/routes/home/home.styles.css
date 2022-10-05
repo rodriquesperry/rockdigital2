@@ -515,17 +515,18 @@
   }
 
   .ready-header {
-    padding-top: 12%;
+    padding-top: 9%;
   }
 
   .ready-header p {
     padding: 0 12rem;
+    font-size: 1.3rem;
   }
 
   .ready-btn {
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
 
   .ready-container .btn {
