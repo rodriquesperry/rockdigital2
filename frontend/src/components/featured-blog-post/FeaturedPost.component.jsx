@@ -44,6 +44,24 @@ const FeaturedPost = () => {
             );
           }
         })}
+        <Col xs={3} lg={{ order: 2 }}>
+          {posts.data &&
+            posts.data.map((post, i) => {
+              if (!post.attributes.featured && i <= 1)
+                return (
+                  <Card key={i} className='headline-posts order-2'>
+                    <Card.Img
+                      variant='top'
+                      src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
+                    />
+                    <Card.Body>
+                      <Card.Title>{post.attributes.Title}</Card.Title>
+                      <Card.Text>{post.attributes.short_description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                );
+            })}
+        </Col>
     </>
   );
 };
