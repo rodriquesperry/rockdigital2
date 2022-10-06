@@ -15,7 +15,10 @@ const BlogPost = () => {
             <img src={PIC} alt='' fluid />
           </div>
           <div className='col header-text'>
-            <h2>This is where your headline goes!</h2>
+            <h2>
+              This is where your headline goes! And Lets see where it goes from
+              this point forward
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               aliquam sint illo quas laboriosam vel, et ea labore ullam neque

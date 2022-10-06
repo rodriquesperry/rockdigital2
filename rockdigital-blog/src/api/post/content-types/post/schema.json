@@ -12,15 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "featured": {
+      "type": "boolean",
+      "default": false
     },
-    "Body": {
-      "type": "text"
+    "body": {
+      "type": "richtext",
+      "required": false
     },
-    "Image": {
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "short_description": {
+      "type": "richtext",
+      "maxLength": 80
+    },
+    "author_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -31,13 +43,11 @@
         "audios"
       ]
     },
-    "featured": {
-      "type": "boolean",
-      "default": false
+    "title": {
+      "type": "string"
     },
-    "short_description": {
-      "type": "text",
-      "maxLength": 80
+    "author": {
+      "type": "string"
     }
   }
 }

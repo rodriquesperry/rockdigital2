@@ -1,0 +1,63 @@
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-item {
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+    width: 75%;
+  }
+
+  .portfolio-item:nth-child(odd) {
+    padding-top: 14rem;
+  }
+
+  .portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1.5px solid rgb(34, 21, 6);
+    border-radius: 2px;
+  }
+
+  .portfolio-item .img-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(34, 21, 6, 0.904);
+  }
+
+  .portfolio-item h4 {
+    margin: 1rem;
+  }
+
+  /* .portfolio-item a:hover img {
+    transform: scale(0.5);
+    transition: 0.9s ease;
+  } */
+
+  .portfolio-item a:hover .img-info {
+    opacity: 1;
+  }
+
+  .portfolio-items .text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    --webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .portfolio-items h3 {
+    padding: 0 1rem;
+  }
+}

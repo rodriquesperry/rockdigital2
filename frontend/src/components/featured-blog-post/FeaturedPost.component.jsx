@@ -5,10 +5,9 @@ import axios from 'axios';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-const FeaturedPost = ({ children }) => {
+const FeaturedPost = () => {
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
-  let shortDescription = '';
 
   useEffect(() => {
     const getPosts = async () => {
@@ -29,18 +28,19 @@ const FeaturedPost = ({ children }) => {
       {posts &&
         posts.map((post, i) => {
           if (post.attributes.featured) {
+            console.log(post);
             return (
               <Col xs={(6, { order: 1 })} className='featured-container'>
                 <Card key={i} className='featured'>
                   <Card.Img
                     variant='top'
-                    src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
+                    src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
                   />
                   <Card.Body>
                     <Card.Title>
-                      {post.attributes.Title.length > 60
-                        ? `${post.attributes.Title.slice(0, 60)}...`
-                        : post.attributes.Title}
+                      {post.attributes.title.length > 60
+                        ? `${post.attributes.title.slice(0, 60)}...`
+                        : post.attributes.title}
                     </Card.Title>
                     <Card.Text>
                       {post.attributes.short_description.length > 150
@@ -64,13 +64,13 @@ const FeaturedPost = ({ children }) => {
                 <Card key={i} className='headline-posts order-2'>
                   <Card.Img
                     variant='top'
-                    src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
+                    src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
                   />
                   <Card.Body>
                     <Card.Title>
-                      {post.attributes.Title.length > 38
-                        ? `${post.attributes.Title.slice(0, 38)}...`
-                        : post.attributes.Title}
+                      {post.attributes.title.length > 38
+                        ? `${post.attributes.title.slice(0, 38)}...`
+                        : post.attributes.title}
                     </Card.Title>
                     <Card.Text>
                       {post.attributes.short_description.length > 40

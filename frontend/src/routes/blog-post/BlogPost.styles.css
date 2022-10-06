@@ -32,13 +32,13 @@
     border: 3px solid #fff;
   }
 
+  .header-content-container h2 {
+    padding-right: 2rem;
+  }
+
   .header-content-container p {
     padding-right: 4rem;
     font-size: 1.2rem;
-  }
-
-  .header-content-container .header-text {
-    margin-top: 2.5rem;
   }
 
   .author-info {

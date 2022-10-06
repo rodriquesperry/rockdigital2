@@ -33,13 +33,13 @@ const BlogPost = () => {
                 <Card>
                   <Card.Img
                     variant='top'
-                    src={`http://localhost:1337${post.attributes.Image.data.attributes.url}`}
+                    src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
                   />
                   <Card.Body>
                     <Card.Title>
-                    {post.attributes.Title.length > 48
-                      ? `${post.attributes.Title.slice(0, 48)}...`
-                      : post.attributes.Title}
+                      {post.attributes.title.length > 48
+                        ? `${post.attributes.title.slice(0, 48)}...`
+                        : post.attributes.title}
                     </Card.Title>
                     <Card.Text>
                       {post.attributes.short_description.length > 60

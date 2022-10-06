@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet';
 
 import CarouselTopPage from '../../components/carousels/top-page/carousel.component';
 import CarouselReview from '../../components/carousels/reviews/carousel-review.component';
+import PortfolioItem from '../../components/portfolio-item/PortfolioItem.component';
 
 import rec from '../../assets/rec.png';
 import chateauDijon from '../../assets/chateau-dijon.com.png';
@@ -123,64 +124,7 @@ const Home = () => {
             <h2>SOME OF OUR WORK</h2>
             <hr />
             <div className='portfolio-items'>
-              <div className='portfolio-item'>
-                <a
-                  href='https://genuinellc.com'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <img src={genuine} alt='' className='img-fluid' />
-                  <div className='img-info'>
-                    <div className='text'>
-                      <h3>Genuine LLC</h3>
-                      <p>Responsive Website Built Using Bootstrap v5.2</p>
-                    </div>
-                  </div>
-                </a>
-                <h4>Genuine Remodeling and Restoration LLC</h4>
-              </div>
-              <div className='portfolio-item-2'>
-                <a
-                  href='https://chateau-dijon.com'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <img src={chateauDijon} alt='' className='img-fluid' />
-                  <div className='img-info'>
-                    <div className='text'>
-                      <h3>Chateau Dijon Luxury Townhomes</h3>
-                      <p>Responsive Website Built Using Bootstrap v5.2</p>
-                    </div>
-                  </div>
-                </a>
-                <h4>Chateau Dijon Luxury Townhomes</h4>
-              </div>
-              <div className='portfolio-item'>
-                <a
-                  href='https://thebeautyambassador.com/spa-website-design'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <img src={spa} alt='' className='img-fluid' />
-                  <div className='img-info'>
-                    <div className='text'>
-                      <h3>Spa Website Design</h3>
-                      <p>Responsive Spa Website Built Using Bootstrap v5.2</p>
-                    </div>
-                  </div>
-                </a>
-                <h4>Spa Website Design</h4>
-              </div>
-
-              <div className='portfolio-item-2'>
-                <img src={genuine} alt='' className='img-fluid' />
-                <div className='img-info'>
-                  <div className='text'>
-                    <h3>Genuine LLC</h3>
-                    <p>Responsive Website Built Using Bootstrap v5.2</p>
-                  </div>
-                </div>
-              </div>
+            <PortfolioItem />
             </div>
           </div>
           <div className='ready-container'>

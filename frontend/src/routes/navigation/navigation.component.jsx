@@ -56,7 +56,7 @@ const Navigation = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className='justify-content-end flex-grow-1 pe-3'>
-                <NavDropdown
+               {/* <NavDropdown
                   title='WHO WE SERVE'
                   id='offcanvasNavbarDropdown-expand'
                 >
@@ -75,7 +75,7 @@ const Navigation = () => {
                       Small to Large Businesses
                     </NavDropdown.Item>
                   </LinkContainer>
-                </NavDropdown>
+                </NavDropdown> */}
                 <LinkContainer to='/about'>
                   <Nav.Link>ABOUT US</Nav.Link>
                 </LinkContainer>
