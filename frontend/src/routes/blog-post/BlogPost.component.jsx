@@ -3,6 +3,8 @@ import { useParams } from 'react-router';
 
 import axios from 'axios';
 
+import { Helmet } from 'react-helmet';
+
 import PIC from '../../assets/81iF6QLWlKL._SS500_.jpg';
 import me from '../../assets/IMG-1561 copy 2.png';
 
@@ -57,6 +59,10 @@ const BlogPost = () => {
 
   return (
     <>
+      <Helmet>
+        <meta />
+        <title>{title}</title>
+      </Helmet>
       {post && (
         <div className='blog-post-container'>
           <div className='blog-post-header'>
