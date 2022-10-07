@@ -9,6 +9,13 @@ body {
   padding-left: calc(2.8rem * 0.9);
   color: rgb(34, 21, 6);
   overflow-x: hidden;
+  opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 0.5;
 }
 
 code {

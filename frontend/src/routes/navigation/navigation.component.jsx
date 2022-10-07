@@ -13,8 +13,17 @@ import Powered from '../../components/powered foooter/powered.component';
 
 import logo from '../../assets/RockDigitalLogo-450px.jpeg';
 
-// import '../../scss/navigation.styles.scss';
 import './navigation.styles.css';
+
+const handleClick = () => {
+  document.body.className = 'fade';
+
+  // document.addEventListener('DOMContentLoaded', () => {
+  window.setTimeout(function () {
+    document.body.className = '';
+  }, 1000);
+  // });
+};
 
 const Navigation = () => {
   useEffect(() => {
@@ -39,7 +48,7 @@ const Navigation = () => {
       <Navbar expand='lg' className='mb-3 sticky-top'>
         <Container fluid>
           <LinkContainer to='/'>
-            <Navbar.Brand>
+            <Navbar.Brand onClick={handleClick}>
               <img src={logo} alt='' className='img-fluid' />
             </Navbar.Brand>
           </LinkContainer>
@@ -56,7 +65,7 @@ const Navigation = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className='justify-content-end flex-grow-1 pe-3'>
-               {/* <NavDropdown
+                {/* <NavDropdown
                   title='WHO WE SERVE'
                   id='offcanvasNavbarDropdown-expand'
                 >
