@@ -27,9 +27,11 @@
 
   .header-content-container img {
     width: 85%;
+    height: 550px;
     position: relative;
     left: 2.5rem;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
+    object-fit: cover;
   }
 
   .header-content-container h2 {
@@ -39,6 +41,21 @@
   .header-content-container p {
     padding-right: 4rem;
     font-size: 1.2rem;
+  }
+
+  .header-text {
+    height: 420px;
+    position: relative;
+  }
+
+  .short-description {
+    margin-top: .6rem;
+  }
+
+  .read-time {
+    position: absolute;
+    bottom: 0px;
+    font-weight: bold;
   }
 
   .author-info {
@@ -61,7 +78,7 @@
 
   .info-text {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
   }
 
   .info-text h5,

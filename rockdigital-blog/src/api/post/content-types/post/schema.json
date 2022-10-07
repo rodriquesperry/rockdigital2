@@ -30,24 +30,28 @@
     },
     "short_description": {
       "type": "richtext",
-      "maxLength": 80
+      "maxLength": 455
     },
     "author_image": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 100
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "default": "Rock Digital",
+      "required": false
+    },
+    "read_time": {
+      "type": "string",
+      "default": "5mins"
     }
   }
 }

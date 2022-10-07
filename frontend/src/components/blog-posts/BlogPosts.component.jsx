@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
@@ -30,27 +32,29 @@ const BlogPost = () => {
           if (!post.attributes.featured && i >= 2) {
             return (
               <Col xs={3} className='post-col'>
-                <Card>
-                  <Card.Img
-                    variant='top'
-                    src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
-                  />
-                  <Card.Body>
-                    <Card.Title>
-                      {post.attributes.title.length > 48
-                        ? `${post.attributes.title.slice(0, 48)}...`
-                        : post.attributes.title}
-                    </Card.Title>
-                    <Card.Text>
-                      {post.attributes.short_description.length > 60
-                        ? `${post.attributes.short_description.substring(
-                            0,
-                            60
-                          )}...`
-                        : post.attributes.short_description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <Link to={`/blog/blogpost/${post.id}`}>
+                  <Card>
+                    <Card.Img
+                      variant='top'
+                      src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
+                    />
+                    <Card.Body>
+                      <Card.Title>
+                        {post.attributes.title.length > 48
+                          ? `${post.attributes.title.slice(0, 48)}...`
+                          : post.attributes.title}
+                      </Card.Title>
+                      <Card.Text>
+                        {post.attributes.short_description.length > 60
+                          ? `${post.attributes.short_description.substring(
+                              0,
+                              60
+                            )}...`
+                          : post.attributes.short_description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
               </Col>
             );
           }
