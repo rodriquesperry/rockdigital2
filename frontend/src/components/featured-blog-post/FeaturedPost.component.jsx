@@ -11,8 +11,8 @@ const FeaturedPost = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const getPosts = async () => {
-      await axios
+    const getPosts = () => {
+      axios
         .get('http://localhost:1337/api/posts?populate=*')
         .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));

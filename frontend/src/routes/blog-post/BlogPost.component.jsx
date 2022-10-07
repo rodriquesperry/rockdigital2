@@ -16,6 +16,7 @@ const BlogPost = () => {
   const [authorImage, setAuthorImage] = useState({});
   const [featImage, setFeatImage] = useState({});
 
+
   let { id } = useParams();
 
   useEffect(() => {
@@ -34,6 +35,8 @@ const BlogPost = () => {
         .catch((error) => setError(error));
     };
     getPost();
+
+    
   }, []);
 
   console.log(post);
@@ -66,7 +69,7 @@ const BlogPost = () => {
       {post && (
         <div className='blog-post-container'>
           <div className='blog-post-header'>
-            <div className='bog-post-header-background'></div>
+            <div className='blog-post-header-background'></div>
             <div className='header-content-container'>
               <div className='col'>
                 <img src={`http://localhost:1337${featImage}`} alt='' fluid />

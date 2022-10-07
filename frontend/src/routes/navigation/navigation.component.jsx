@@ -15,16 +15,6 @@ import logo from '../../assets/RockDigitalLogo-450px.jpeg';
 
 import './navigation.styles.css';
 
-const handleClick = () => {
-  document.body.className = 'fade';
-
-  // document.addEventListener('DOMContentLoaded', () => {
-  window.setTimeout(function () {
-    document.body.className = '';
-  }, 1000);
-  // });
-};
-
 const Navigation = () => {
   useEffect(() => {
     const handleScroll = (e) => {
@@ -48,7 +38,7 @@ const Navigation = () => {
       <Navbar expand='lg' className='mb-3 sticky-top'>
         <Container fluid>
           <LinkContainer to='/'>
-            <Navbar.Brand onClick={handleClick}>
+            <Navbar.Brand>
               <img src={logo} alt='' className='img-fluid' />
             </Navbar.Brand>
           </LinkContainer>
