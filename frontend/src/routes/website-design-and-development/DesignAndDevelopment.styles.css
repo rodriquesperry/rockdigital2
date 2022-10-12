@@ -1,0 +1,45 @@
+.design-and-development-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.design-and-development-img-container::before {
+  content: '';
+  background-image: url('../../assets/website-design.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+}
+
+#design-text {
+  position: relative;
+  color: #ffffff;
+  background: rgba(128, 128, 128, 0.295);
+  font-size: 6.4em;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.design-and-development-container {
+  margin: 5rem 0;
+}
+
+.design-and-development-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.3rem;
+  align-items: center;
+  padding: 0 15rem;
+}

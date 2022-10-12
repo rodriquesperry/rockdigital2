@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
+
 import { Helmet } from 'react-helmet';
 
 import CarouselTopPage from '../../components/carousels/top-page/carousel.component';
 import CarouselReview from '../../components/carousels/reviews/carousel-review.component';
 import PortfolioItem from '../../components/portfolio-item/PortfolioItem.component';
+
+import { useParallax } from 'react-scroll-parallax';
 
 import rec from '../../assets/rec.png';
 import chateauDijon from '../../assets/chateau-dijon.com.png';
@@ -13,6 +17,7 @@ import spa from '../../assets/spa2-1024.jpg';
 import './home.styles.css';
 
 const Home = () => {
+
   return (
     <>
       <Helmet>
@@ -39,26 +44,35 @@ const Home = () => {
               confident that you’ll always get the perfect website that fits
               your style and budget. Let’s create you a jaw-dropping designed,
               mobile ready, and easy to use website that your customers will
-              love to use and converts like crazy.
+              love and converts like crazy. Click the area below you are
+              interested in.
             </p>
           </div>
 
           <div className='divs'>
             <div className='div1'>
-              <div className='div-content'>
-                <h1>WEBSITE DESIGN</h1>
-                <h3 id='development'>& DEVELOPMENT</h3>
-              </div>
+              <a href='/website-design-and-development'>
+                <div className='div-content'>
+                  <h1>WEBSITE DESIGN</h1>
+                  <h3 id='development'>& DEVELOPMENT</h3>
+                </div>
+              </a>
             </div>
+
             <div className='div2'>
-              <div className='div-content'>
-                <h3>WEBSITE MAINTENANCE</h3>
-              </div>
+              <a href='/website-maintenance'>
+                <div className='div-content'>
+                  <h3>WEBSITE MAINTENANCE</h3>
+                </div>
+              </a>
             </div>
+
             <div className='div3'>
-              <div className='div-content'>
-                <h3>WEBSITE IMPROVEMENT</h3>
-              </div>
+              <a href='/website-improvement'>
+                <div className='div-content'>
+                  <h3>DIGITAL PRESENCE IMPROVEMENT</h3>
+                </div>
+              </a>
             </div>
           </div>
           <div className='build-relationships-container'>
@@ -70,8 +84,8 @@ const Home = () => {
               We exist to help your business succeed online. Our web specialists
               can help you design and develop a custom website or app, plan your
               digital marketing strategy to drive traffic and provide you with
-              content. Let's reshape the way your customers interact with your
-              business online.
+              killer content. Let's reshape the way your customers interact with
+              your business online.
             </p>
           </div>
 
@@ -107,8 +121,16 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className='parallax1'>
-            <div>h1 something about something!</div>
+          <div className='parallax1' >
+            <div id='parallax-1-text'>
+              <div className='parallax-1-heading'>
+                <h3>
+                  READY TO <br /> START YOUR PROJECT?
+                </h3>
+              </div>
+              <p></p>
+              <a href='/contact' className='parallax-btn'>CONTACT US</a>
+            </div>
           </div>
           <div className='reviews-container'>
             <h2>REVIEWS</h2>
@@ -124,7 +146,7 @@ const Home = () => {
             <h2>SOME OF OUR WORK</h2>
             <hr />
             <div className='portfolio-items'>
-            <PortfolioItem />
+              <PortfolioItem />
             </div>
           </div>
           <div className='ready-container'>
@@ -135,12 +157,14 @@ const Home = () => {
                 Ready to step your business' web game up? <br /> It would be our
                 pleasure to create a custom website design experience that
                 represents your brand, communicates your brand message and
-                generates your business more leads which, in turn, increases your overall
-                return on investment.
+                generates your business more leads which, in turn, increases
+                your overall return on investment.
               </p>
             </div>
             <div className='ready-btn'>
-              <button className='btn'>Click Here</button>
+              <a href='/contact' className='btn'>
+                Click Here
+              </a>
             </div>
           </div>
         </div>

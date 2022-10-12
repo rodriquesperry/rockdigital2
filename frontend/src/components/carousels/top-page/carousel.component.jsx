@@ -2,14 +2,20 @@ import { Link } from 'react-router-dom';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import workdesk from '../../../assets/pexels-hasan-albari-1229861.jpeg';
 import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
 import WebDesign from '../../../assets/website-design.jpg';
+import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';
 
 const CarouselTopPage = () => {
+  let rando = Math.floor(Math.random() * 2);
+
+  let routes = ['/website-improvement', '/website-design-and-development'];
+
+  console.log(`rando: ${rando}`);
+
   return (
     <div>
       <Carousel interval={7300} fade>
@@ -28,14 +34,16 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>Custom websites designed with your customers in mind.</p>
-              <Link className='btn'>LEARN MORE</Link>
+              <a href='/website-design-and-development' className='btn'>
+                LEARN MORE
+              </a>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className='d-block w-100 img-fluid'
-            src={workdesk}
+            src={DigitalMarketing}
             alt='Second slide'
           />
 
@@ -48,7 +56,9 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>Outperform your competitors with proven processes.</p>
-              <Link className='btn'>LEARN MORE</Link>
+              <a href='/website-improvement' className='btn'>
+                LEARN MORE
+              </a>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -68,7 +78,9 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>Customers will love to interact with your business online.</p>
-              <Link className='btn'>LEARN MORE</Link>
+              <a href={routes[rando]} className='btn'>
+                LEARN MORE
+              </a>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

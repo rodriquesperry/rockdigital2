@@ -74,20 +74,20 @@ const Navigation = () => {
                       Small to Large Businesses
                     </NavDropdown.Item>
                   </LinkContainer>
-                </NavDropdown> */}
+                </NavDropdown> 
                 <LinkContainer to='/about'>
                   <Nav.Link>ABOUT US</Nav.Link>
+                </LinkContainer>*/}
+                <LinkContainer to='/services'>
+                  <Nav.Link>SERVICES</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to='/portfolio'>
                   <Nav.Link>PORTFOLIO</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/services'>
-                  <Nav.Link>SERVICES</Nav.Link>
-                </LinkContainer>
+                <Nav.Link href='/contact'>CONTACT US</Nav.Link>
                 <LinkContainer to='/blog'>
                   <Nav.Link>BLOG</Nav.Link>
                 </LinkContainer>
-                <Nav.Link href='/contact'>CONTACT US</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

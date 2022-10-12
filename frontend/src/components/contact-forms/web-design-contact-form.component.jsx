@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactForm = () => {
+const DesignContactForm = () => {
   document.addEventListener(
     'load',
     (function (h, b, s, n, i, p, e, t) {
@@ -8,7 +8,7 @@ const ContactForm = () => {
       h._HB_.pid = i;
       t = b.createElement(s);
       t.type = 'text/javascript';
-      //   t.async = !0;
+      t.async = !0;
       t.src = n;
       e = b.getElementsByTagName(s)[0];
       e.parentNode.insertBefore(t, e);
@@ -36,4 +36,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default DesignContactForm;

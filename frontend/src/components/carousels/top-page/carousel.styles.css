@@ -56,7 +56,6 @@
 
 .carousel-caption-block p {
   font-size: 1.1rem;
-  padding: 0 1rem;
 }
 
 .carousel-caption .carousel-caption-block .btn {
@@ -79,6 +78,11 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+
+  .carousel {
+    margin-top: 2rem;
+  }
+
   .carousel-caption {
     top: 0vh;
 
@@ -143,8 +147,8 @@
   }
 
   .carousel-heading h3 span {
-    margin: 0;
-    padding: 0;
+    /* margin: 0 0 0 3rem; */
+    /* padding: 0 0 0 2rem; */
   }
 
   .carousel-caption-block p {

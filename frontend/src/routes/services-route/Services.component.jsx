@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import WebDesignService from '../../assets/web-design-service.jpeg';
@@ -26,13 +25,11 @@ const Services = () => {
                 Web Design and Development
               </h2>
               <div className='services-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                A website can have a massive impact on any business' overall
+                success, from increases of your brand reach to increases in
+                revenue. At Rock Digital we partner with your business and adapt
+                it's marketing goals to produce a custom made solution that fits
+                your needs and vision. There is no cookie cutting here.
               </div>
             </div>
             <div className='services-img'>
@@ -46,13 +43,8 @@ const Services = () => {
             <div className='services-text-container'>
               <h2 className='service-header'>Audience Attraction</h2>
               <div className='services-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                
+                
               </div>
             </div>
           </div>
@@ -70,7 +62,7 @@ const Services = () => {
               </div>
             </div>
             <div className='services-img'>
-                <img src={WebsiteImprovement} alt=""/>
+              <img src={WebsiteImprovement} alt='' />
             </div>
           </div>
         </div>

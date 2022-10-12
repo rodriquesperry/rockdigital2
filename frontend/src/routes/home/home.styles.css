@@ -59,7 +59,7 @@
 }
 
 .div2 {
-  background-image: url('../../assets/web-maintenance.jpeg');
+  background-image: url('../../assets/web-improvement.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,9 +69,10 @@
 }
 
 .div3 {
-  background-image: url('../../assets/web-improvement.jpeg');
+  background-image: url('../../assets/web-maintenance.jpeg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 300px;
   position: relative;
@@ -183,15 +184,6 @@
   margin: 0 auto 1rem;
 }
 
-.ready-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: calc(10% - 40px);
-}
-
 .parallax1 {
   background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
   background-repeat: no-repeat;
@@ -201,9 +193,19 @@
   height: 100vh;
 }
 
+.ready-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: calc(10% - 40px);
+}
+
 .ready-btn .btn {
   color: #fff;
   background-color: rgb(255, 183, 0);
+  font-weight: bold;
 }
 
 .ready-btn .btn:hover {
@@ -236,7 +238,6 @@
   .build-relationships-container,
   .reviews-container,
   .homepage-portfolio-container {
-    margin: 6rem 0;
     padding-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -324,8 +325,37 @@
     height: 85vh;
   }
 
+  #parallax-1-text {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    top: 30%;
+  }
+
+  .parallax-1-heading h3 {
+    font-size: 5rem;
+  }
+
+  .parallax-btn {
+    color: #fff;
+    background-color: rgb(255, 183, 0);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .parallax-btn:hover {
+    background-color: #fff;
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+  }
+
   .reviews {
-    margin: 2rem 0;
+    margin: 0 0 5rem 0;
   }
 
   .reviews-container h2 {
@@ -337,6 +367,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+    padding: 0;
   }
   .review p {
     font-size: 2rem;
@@ -402,5 +433,6 @@
     font-weight: 500;
     color: #ffffff;
     border-radius: 0;
+    font-weight: bold;
   }
 }
