@@ -1,6 +1,8 @@
 .navbar {
   font-weight: bold;
   background-color: #fff;
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
 }
 
 .navbar .navbar-brand {

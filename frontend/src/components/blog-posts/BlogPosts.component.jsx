@@ -31,7 +31,7 @@ const BlogPost = () => {
         posts.map((post, i) => {
           if (!post.attributes.featured && i >= 2) {
             return (
-              <Col md={6} lg={3} className='post-col'>
+              <Col md={6} lg={3} className='post-col' key={i}>
                 <Link to={`/blog/blogpost/${post.id}`}>
                   <Card>
                     <Card.Img
@@ -58,6 +58,7 @@ const BlogPost = () => {
               </Col>
             );
           }
+          return null;
         })}
     </div>
   );

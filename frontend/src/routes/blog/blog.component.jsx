@@ -20,15 +20,17 @@ const Blog = () => {
         <meta name='keywords' content='web design seo' />
         <title>Blog</title>
       </Helmet>
-      <div className='img-container'>
-        <h1 id='text'>THE BLOG</h1>
+      <div className='blog-container'>
+        <div className='img-container'>
+          <h1 id='text'>THE BLOG</h1>
+        </div>
+        <Row className='posts-container'>
+          <FeaturedPost />
+        </Row>
+        <Row>
+          <BlogPosts />
+        </Row>
       </div>
-      <Row className='posts-container'>
-        <FeaturedPost />
-      </Row>
-      <Row>
-        <BlogPosts />
-      </Row>
     </div>
   );
 };

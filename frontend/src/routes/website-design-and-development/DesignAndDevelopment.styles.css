@@ -1,3 +1,9 @@
+.design-and-dev-container {
+  margin-top: 3rem;
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
+}
+
 .design-and-development-img-container {
   position: relative;
   width: 100%;

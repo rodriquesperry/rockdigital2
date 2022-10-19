@@ -1,0 +1,11 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5rem;
+  color: #fff;
+  background-color: rgb(34, 34, 34);
+}
+
+.footer-container div {
+  padding: 5rem 3rem;
+}

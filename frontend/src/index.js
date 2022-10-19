@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import { StaticRouter } from 'react-router-dom/server';
-
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

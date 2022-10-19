@@ -28,7 +28,7 @@ const HomePortfolioItem = () => {
         portfolioItems.map((portfolioItem, i) => {
             return (
               <>
-                <div className='portfolio-item'>
+                <div className='portfolio-item' key={i}>
                   <a
                     href={portfolioItem.attributes.url}
                     target='_blank'

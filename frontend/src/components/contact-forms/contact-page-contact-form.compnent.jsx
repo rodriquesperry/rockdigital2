@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const ContactPageForm = () => {
   const scriptSrc = (function (h, b, s, n, i, p, e, t) {

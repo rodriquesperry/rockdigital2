@@ -13,11 +13,13 @@ const PortfolioPage = () => {
         <meta />
         <title>Portfolio</title>
       </Helmet>
-      <div className='portfolio-img-container'>
-        <h1 className='portfolio-header-text'>PORTFOLIO</h1>
-      </div>
       <div className='portfolio-container'>
-        <PortfolioItem />
+        <div className='portfolio-img-container'>
+          <h1 className='portfolio-header-text'>PORTFOLIO</h1>
+        </div>
+        <div className='portfolio-item-container'>
+          <PortfolioItem />
+        </div>
       </div>
     </>
   );

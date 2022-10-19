@@ -5,8 +5,8 @@ body {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-right: calc(2.8rem * 0.9);
-  padding-left: calc(2.8rem * 0.9);
+  /* padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9); */
   color: rgb(34, 21, 6);
   overflow-x: hidden;
   opacity: 1;
@@ -26,4 +26,14 @@ code {
 .carousel-control-prev,
 .carousel-control-next {
   display: none;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5rem;
+  color: #fff;
+  background-color: gray;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }

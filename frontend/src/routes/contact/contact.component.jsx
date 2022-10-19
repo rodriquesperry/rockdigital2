@@ -13,12 +13,12 @@ const Contact = () => {
         <meta name='keywords' content='web design seo contact' />
         <title>Contact Us</title>
       </Helmet>
-      <div className='contact-img-container'>
-        <div id='contact-img-container-text'>
-          CONTACT US
+      <div className='contact-container'>
+        <div className='contact-img-container'>
+          <div id='contact-img-container-text'>CONTACT US</div>
         </div>
+        <ContactPageForm />
       </div>
-      <ContactPageForm />
     </div>
   );
 };

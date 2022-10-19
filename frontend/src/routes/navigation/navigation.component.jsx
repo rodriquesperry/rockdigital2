@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+import Footer from '../../components/footer/Footer.component';
 import Powered from '../../components/powered foooter/powered.component';
 
 import logo from '../../assets/RockDigitalLogo-450px.jpeg';
@@ -104,6 +105,7 @@ const Navigation = () => {
         </Container>
       </Navbar>
       <Outlet />
+      <Footer />
       <Powered />
     </>
   );

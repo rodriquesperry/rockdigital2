@@ -30,7 +30,7 @@ const FeaturedPost = () => {
         posts.map((post, i) => {
           if (post.attributes.featured) {
             return (
-              <Col md={(6, { order: 1 })} className='featured-container'>
+              <Col md={(6, { order: 1 })} className='featured-container' key={i}>
                 <Link to={`/blog/blogpost/${post.id}`}>
                   <Card key={i} className='featured'>
                     <Card.Img
@@ -57,13 +57,14 @@ const FeaturedPost = () => {
               </Col>
             );
           }
+          return null;
         })}
       <Col md={6, { order: 2 }} lg={3}>
         {posts &&
           posts.map((post, i) => {
             if (!post.attributes.featured && i <= 1)
               return (
-                <Link to={`/blog/blogpost/${post.id}`}>
+                <Link to={`/blog/blogpost/${post.id}`} key={i}>
                   <Card key={i} className='headline-posts order-2'>
                     <Card.Img
                       variant='top'
@@ -87,6 +88,7 @@ const FeaturedPost = () => {
                   </Card>
                 </Link>
               );
+              return null;
           })}
       </Col>
     </>

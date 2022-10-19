@@ -5,9 +5,6 @@ import axios from 'axios';
 
 import { Helmet } from 'react-helmet';
 
-import PIC from '../../assets/81iF6QLWlKL._SS500_.jpg';
-import me from '../../assets/IMG-1561 copy 2.png';
-
 import './blogPost.styles.css';
 
 const BlogPost = () => {
@@ -61,36 +58,38 @@ const BlogPost = () => {
         <meta />
         <title>{title}</title>
       </Helmet>
-      {post && (
-        <div className='blog-post-container'>
-          <div className='blog-post-header'>
-            <div className='blog-post-header-background'></div>
-            <div className='header-content-container'>
-              <div className='col'>
-                <img src={`http://localhost:1337${featImage}`} alt='' fluid />
+      <div className='blog-post-container'>
+        {post && (
+          <div className='blog-post-container'>
+            <div className='blog-post-header'>
+              <div className='blog-post-header-background'></div>
+              <div className='header-content-container'>
+                <div className='col'>
+                  <img src={`http://localhost:1337${featImage}`} alt='' fluid />
+                </div>
+                <div className='col header-text'>
+                  <h2>{title}</h2>
+                  <p className='short-description'>{short_description}</p>
+                  <p className='read-time'>READ TIME: {read_time}mins</p>
+                </div>
               </div>
-              <div className='col header-text'>
-                <h2>{title}</h2>
-                <p className='short-description'>{short_description}</p>
-                <p className='read-time'>READ TIME: {read_time}mins</p>
+              <div className='author-info'>
+                <div className='col-3 info-pic'>
+                  <img src={`http://localhost:1337${authorImage}`} alt='' />
+                </div>
+                <div className='info-text'>
+                  <h5>{author}</h5>
+                  <h6>{date.toDateString()}</h6>
+                  <small>Tags, categories, hashtags</small>
+                </div>
               </div>
             </div>
-            <div className='author-info'>
-              <div className='col-3 info-pic'>
-                <img src={`http://localhost:1337${authorImage}`} alt='' />
-              </div>
-              <div className='info-text'>
-                <h5>{author}</h5>
-                <h6>{date.toDateString()}</h6>
-                <small>Tags, categories, hashtags</small>
-              </div>
+            <div className='blog-post'>
+              <p>{body}</p>
             </div>
           </div>
-          <div className='blog-post'>
-            <p>{body}</p>
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   );
 };

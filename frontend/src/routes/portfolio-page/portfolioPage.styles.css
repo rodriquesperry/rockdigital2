@@ -1,3 +1,8 @@
+.portfolio-container {
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
+}
+
 .portfolio-img-container {
   position: relative;
   width: 100%;
@@ -40,9 +45,8 @@
     font-size: 10rem;
   }
 
-  .portfolio-container {
+  .portfolio-item-container {
     margin-top: 5rem;
-    justify-content: space-around;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

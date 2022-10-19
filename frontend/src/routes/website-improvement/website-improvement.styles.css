@@ -1,3 +1,9 @@
+.improvement-container {
+  margin-top: 3rem;
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
+}
+
 .website-improvement-img-container {
   position: relative;
   width: 100%;
@@ -43,20 +49,19 @@
   text-align: center;
 }
 
-
 @media (hover: hover) and (pointer: fine) {
   .website-improvement-img-container {
     height: 100%;
   }
 
-  #website-improvement-img-container-text { 
+  #website-improvement-img-container-text {
     font-size: 6.4rem;
   }
 
   .website-improvement-container {
     margin: 5rem 0;
   }
-  
+
   .website-improvement-text {
     padding: 0 15rem;
   }

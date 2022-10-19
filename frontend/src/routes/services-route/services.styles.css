@@ -1,3 +1,8 @@
+.services-container {
+  padding-right: calc(2.8rem * 0.9);
+  padding-left: calc(2.8rem * 0.9);
+}
+
 .services-img-container {
   position: relative;
   width: 100%;
