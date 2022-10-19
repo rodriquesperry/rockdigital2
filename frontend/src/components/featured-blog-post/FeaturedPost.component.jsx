@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import axios from 'axios';
@@ -29,9 +29,8 @@ const FeaturedPost = () => {
       {posts &&
         posts.map((post, i) => {
           if (post.attributes.featured) {
-            console.log(post.id);
             return (
-              <Col xs={(6, { order: 1 })} className='featured-container'>
+              <Col md={(6, { order: 1 })} className='featured-container'>
                 <Link to={`/blog/blogpost/${post.id}`}>
                   <Card key={i} className='featured'>
                     <Card.Img
@@ -59,7 +58,7 @@ const FeaturedPost = () => {
             );
           }
         })}
-      <Col xs={3} lg={{ order: 2 }}>
+      <Col md={6, { order: 2 }} lg={3}>
         {posts &&
           posts.map((post, i) => {
             if (!post.attributes.featured && i <= 1)

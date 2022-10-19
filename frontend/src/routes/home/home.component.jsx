@@ -1,23 +1,18 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet';
 
 import CarouselTopPage from '../../components/carousels/top-page/carousel.component';
 import CarouselReview from '../../components/carousels/reviews/carousel-review.component';
+import HomePortfolioItem from '../../components/home-portfolio-items/HomePortfolioItem.component';
 import PortfolioItem from '../../components/portfolio-item/PortfolioItem.component';
 
-import { useParallax } from 'react-scroll-parallax';
-
 import rec from '../../assets/rec.png';
-import chateauDijon from '../../assets/chateau-dijon.com.png';
-import genuine from '../../assets/genuinellc.com_1024.png';
-import spa from '../../assets/spa2-1024.jpg';
 
-// import '../../scss/home.styles.scss';
 import './home.styles.css';
 
 const Home = () => {
-
   return (
     <>
       <Helmet>
@@ -32,7 +27,7 @@ const Home = () => {
         <CarouselTopPage />
 
         <div className='main-container'>
-          <div className='full-serivice-container'>
+          <div className='full-service-container'>
             <h2>
               A FULL SERVICE DIGITAL <span>&nbsp;AGENCY&nbsp; </span>
             </h2>
@@ -62,7 +57,7 @@ const Home = () => {
             <div className='div2'>
               <a href='/website-maintenance'>
                 <div className='div-content'>
-                  <h3>WEBSITE MAINTENANCE</h3>
+                  <h3>WEBSITE IMPROVEMENT</h3>
                 </div>
               </a>
             </div>
@@ -121,15 +116,18 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className='parallax1' >
+          <div className='parallax1'>
             <div id='parallax-1-text'>
               <div className='parallax-1-heading'>
                 <h3>
                   READY TO <br /> START YOUR PROJECT?
                 </h3>
+                <div className='parallax-btn-container'>
+                  <a href='/contact' className='parallax-btn'>
+                    CONTACT US
+                  </a>
+                </div>
               </div>
-              <p></p>
-              <a href='/contact' className='parallax-btn'>CONTACT US</a>
             </div>
           </div>
           <div className='reviews-container'>
@@ -146,19 +144,19 @@ const Home = () => {
             <h2>SOME OF OUR WORK</h2>
             <hr />
             <div className='portfolio-items'>
-              <PortfolioItem />
+              <HomePortfolioItem />
             </div>
           </div>
           <div className='ready-container'>
             <div className='ready-header'>
-              <h2>WE'RE HERE TO HELP YOU:</h2>
+              <h2>WE'RE HERE TO HELP YOUR BUSINESS SUCCEED:</h2>
               <hr />
               <p>
                 Ready to step your business' web game up? <br /> It would be our
                 pleasure to create a custom website design experience that
                 represents your brand, communicates your brand message and
-                generates your business more leads which, in turn, increases
-                your overall return on investment.
+                generates your business more leads which increases your overall
+                revenue. Let's get started:
               </p>
             </div>
             <div className='ready-btn'>

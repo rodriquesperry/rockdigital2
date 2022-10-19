@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Helmet } from 'react-helmet';
 
 import WebDesignService from '../../assets/web-design-service.jpeg';
@@ -22,14 +24,15 @@ const Services = () => {
           <div id='first-service' className='service'>
             <div className='services-text-container'>
               <h2 className='service-text-header'>
-                Web Design and Development
+                We'll build what you need...
               </h2>
               <div className='services-text'>
-                A website can have a massive impact on any business' overall
-                success, from increases of your brand reach to increases in
-                revenue. At Rock Digital we partner with your business and adapt
-                it's marketing goals to produce a custom made solution that fits
-                your needs and vision. There is no cookie cutting here.
+                Effortlessly dominate your competition with our web design and
+                development service. You can expect to get ranked in search
+                engines and reach customers on any platform with a lightning
+                fast, mobile friendly, and search engine optimized website
+                design. Your users will enjoy interacting with your business'
+                website.
               </div>
             </div>
             <div className='services-img'>
@@ -41,24 +44,29 @@ const Services = () => {
               <img src={SeoService} alt='' />
             </div>
             <div className='services-text-container'>
-              <h2 className='service-header'>Audience Attraction</h2>
+              <h2 className='service-text-header'>We'll help you grow...</h2>
               <div className='services-text'>
-                
-                
+                Know what your customers are searching for and attract the right
+                customers to your website. The truth is that generating traffic
+                is a never ending task, which is why we offer custom made
+                solutions to handle your website traffic. From PPC
+                (Pay-Per-Click) to organic traffic, we have the right solutions
+                to quickly get you laser targeted traffic while ranking you
+                higher in Google.
               </div>
             </div>
           </div>
           <div id='third-service' className='service'>
             <div className='services-text-container'>
-              <h2 className='service-header'>Website Improvement</h2>
+              <h2 className='service-text-header'>
+                We'll care for your investment...
+              </h2>
               <div className='services-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Stay ahead of your competition and make sure your website
+                continues to deliver positive returns on your investment. Every
+                website requires upkeep and continual improvement to operate
+                properly. We take these stresses away form you with custom
+                website improvement packages tailored to fit your business vision.
               </div>
             </div>
             <div className='services-img'>

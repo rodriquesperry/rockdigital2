@@ -26,15 +26,12 @@
   position: relative;
   color: #ffffff;
   background: rgba(128, 128, 128, 0.295);
-  font-size: 6.4rem;
+  font-size: 2.4rem;
   line-height: 1;
   text-align: center;
   font-weight: bold;
   padding: 0 1rem;
-}
-
-.website-maintenance-container {
-  margin: 5rem 0;
+  width: 100%;
 }
 
 .website-maintenance-text {
@@ -42,6 +39,22 @@
   flex-direction: column;
   justify-content: center;
   font-size: 1.3rem;
-  /* align-items: center; */
-  padding: 0 15rem;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #website-maintenance-img-container-text {
+    font-size: 6.4rem;
+  }
+  
+  .website-maintenance-container {
+    margin: 5rem 0;
+  }
+  
+  .website-maintenance-text {
+    padding: 0 15rem;
+    text-align: left;
+  }
 }

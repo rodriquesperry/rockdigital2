@@ -1,9 +1,10 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Carousel from 'react-bootstrap/Carousel';
 
 import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
-import WebDesign from '../../../assets/website-design.jpg';
+import WebDesign from '../../../assets/web-design-full.jpeg';
 import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
 
 // import '../../../scss/carousel.styles.scss';
@@ -14,7 +15,6 @@ const CarouselTopPage = () => {
 
   let routes = ['/website-improvement', '/website-design-and-development'];
 
-  console.log(`rando: ${rando}`);
 
   return (
     <div>

@@ -1,13 +1,31 @@
+.portfolio-item {
+  text-align: center;
+  position: relative;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.portfolio-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1.5px solid rgb(34, 21, 6);
+  border-radius: 2px;
+}
+
+.portfolio-items h4 {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+
+
 @media (hover: hover) and (pointer: fine) {
   .portfolio-item {
-    text-align: center;
-    position: relative;
-    margin-top: 5rem;
     width: 75%;
-  }
-
-  .portfolio-item:nth-child(odd) {
-    padding-top: 14rem;
   }
 
   .portfolio-item img {

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 import me from '../../../assets/IMG-1561 copy 2.png';

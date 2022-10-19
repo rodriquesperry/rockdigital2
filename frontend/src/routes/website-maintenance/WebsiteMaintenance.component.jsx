@@ -9,7 +9,7 @@ const WebsiteMaintenance = () => {
     <>
       <div className='website-maintenance-img-container'>
         <div id='website-maintenance-img-container-text'>
-          WEBSITE MAINTENANCE
+          WEBSITE <br /> IMPROVEMENT
         </div>
       </div>
       <div className='website-maintenance-container'>
@@ -32,7 +32,7 @@ const WebsiteMaintenance = () => {
           </p>
           <p>
             We believe that your website maintenance should save you time and
-            money. Which is why we offer custom made maintenance solutions to
+            money which is why we offer custom made maintenance solutions to
             fit your needs. Let's get you started: Fill in your information
             below and then check your email for follow-up instructions. We look
             forward to working with you.

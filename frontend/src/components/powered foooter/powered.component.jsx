@@ -1,9 +1,11 @@
+import React from 'react';
+
 const PoweredBy = () => {
   return (
-    <div class='powered-by text-center py-5'>
+    <div className='powered-by text-center py-5'>
       <small>
         &copy;2022 Rock Digital Web Agency | Powered by
-        <a href='http://rockdigital.agency' target='_blank' rel="noreferrer">
+        <a href='http://rockdigital.agency' target='_blank' rel='noreferrer'>
           Rock Digital
         </a>
       </small>

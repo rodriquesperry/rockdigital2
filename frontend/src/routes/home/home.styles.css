@@ -2,8 +2,12 @@
   height: 100%;
 }
 
+.main-container {
+  margin-top: 5rem;
+}
+
 .main-container h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -22,7 +26,7 @@
   margin: 1rem 0;
 }
 
-.full-serivice-container,
+.full-service-container,
 .build-relationships-container,
 .reviews-container,
 .homepage-portfolio-container {
@@ -33,13 +37,20 @@
   align-items: center;
 }
 
-.full-serivice-container,
-.build-relationships-container,
-.reviews-container,
+.full-service-container h2,
+.build-relationships-container h2,
+.reviews-container h2,
+.homepage-portfolio-container h2 {
+  font-size: 2rem;
+}
+
+.full-service-container p,
+.build-relationships-container p,
+.reviews-container p,
 .homepage-portfolio-container p {
   margin-top: 1.3rem;
   padding: 0 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -53,6 +64,7 @@
   background-image: url('../../assets/web-design.jpeg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 300px;
   position: relative;
@@ -93,7 +105,7 @@
 .divs h1,
 .divs h3 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,7 +116,7 @@
 }
 
 .div1 h1 {
-  top: 31%;
+  top: 43%;
 }
 
 #development {
@@ -117,18 +129,22 @@
   height: 100%;
 }
 
+.build-relationships-container {
+  margin: 5rem 0 0;
+}
+
 .skills {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
+  margin-top: 5rem;
 }
 
 .skill-set {
   display: grid;
-  grid-template-rows: 1fr 0.1fr 1fr;
   place-items: center;
-  row-gap: 0.1rem;
-  margin-bottom: 1rem;
+  row-gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .skill-set img {
@@ -141,15 +157,54 @@
   font-size: 1.1rem;
 }
 
+.parallax1 {
+  background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+#parallax-1-text {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  top: 30%;
+  margin: 0 2.3rem;
+}
+
+.parallax-1-heading h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax-btn-container {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.parallax-btn {
+  color: #fff;
+  background-color: rgb(255, 183, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
 .review {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 1rem;
+  margin: 1rem 0 5rem 0;
 }
 
 .review p {
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 2rem;
   margin-top: 2rem;
@@ -173,24 +228,19 @@
   border: 0.1px solid rgb(34, 21, 6);
 }
 
-.ready-container {
-  background-color: rgb(242, 242, 242);
-  width: 80%;
-  height: 500px;
-  margin: auto;
-}
-
 .global-hr {
   margin: 0 auto 1rem;
 }
 
-.parallax1 {
-  background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
+.portfolio-items {
+  margin-top: 5rem;
+}
+
+.ready-container {
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  height: 500px;
+  margin: 0;
 }
 
 .ready-header {
@@ -199,11 +249,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: calc(10% - 40px);
+  padding-top: 20%;
+}
+
+.ready-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .ready-btn .btn {
   color: #fff;
+  border: 0.5px solid rgb(34, 21, 6);
   background-color: rgb(255, 183, 0);
   font-weight: bold;
 }
@@ -224,6 +281,10 @@
     max-height: 500px;
   }
 
+  .main-container {
+    margin-top: 0;
+  }
+
   .main-container hr {
     width: 10%;
     border: 3px solid rgb(255, 183, 0);
@@ -234,7 +295,7 @@
     display: block;
   }
 
-  .full-serivice-container,
+  .full-service-container,
   .build-relationships-container,
   .reviews-container,
   .homepage-portfolio-container {
@@ -245,16 +306,17 @@
     align-items: center;
   }
 
-  .full-serivice-container h2 {
-    margin-top: 6rem;
+  .full-service-container h2 {
+    margin-top: 3rem;
   }
 
-  .full-serivice-container,
-  .build-relationships-container,
-  .reviews-container,
+  .full-service-container p,
+  .build-relationships-container p,
+  .reviews-container p,
   .homepage-portfolio-container p {
     margin-top: 1.3rem;
     padding: 0 10rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -268,7 +330,9 @@
     column-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+    margin-top: 3rem;
   }
+
   .div1 {
     width: 100%;
     height: 300px;
@@ -282,16 +346,22 @@
     height: 300px;
   }
 
+  .div1 h1 {
+    top: 33%;
+  }
+
   .divs h1,
   .divs h3 {
     font-size: 3rem;
   }
 
   .skills {
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
   }
+
   .skill-set {
     display: grid;
     justify-content: center;
@@ -299,6 +369,7 @@
     align-items: center;
     padding-bottom: 6rem;
   }
+
   .skill-set img {
     width: 20%;
   }
@@ -346,6 +417,8 @@
     padding: 0.5rem;
     font-weight: bold;
     margin-top: 1rem;
+    width: 20%;
+    text-align: center;
   }
 
   .parallax-btn:hover {
@@ -395,7 +468,7 @@
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    height: 50vh;
+    height: 45vh;
   }
 
   .portfolio-items {
@@ -409,8 +482,15 @@
     justify-items: center;
   }
 
+  .home-container .portfolio-item:nth-child(odd) {
+    padding-top: 14rem;
+  }
+
   .ready-container {
-    margin-bottom: 5rem;
+    background-color: rgb(242, 242, 242);
+    width: 80%;
+    height: 500px;
+    margin: auto auto 5rem auto;
   }
 
   .ready-header {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 
 import axios from 'axios';
@@ -8,14 +8,13 @@ import { Helmet } from 'react-helmet';
 import PIC from '../../assets/81iF6QLWlKL._SS500_.jpg';
 import me from '../../assets/IMG-1561 copy 2.png';
 
-import './BlogPost.styles.css';
+import './blogPost.styles.css';
 
 const BlogPost = () => {
   const [error, setError] = useState(null);
   const [post, setPost] = useState({});
   const [authorImage, setAuthorImage] = useState({});
   const [featImage, setFeatImage] = useState({});
-
 
   let { id } = useParams();
 
@@ -35,11 +34,7 @@ const BlogPost = () => {
         .catch((error) => setError(error));
     };
     getPost();
-
-    
   }, []);
-
-  console.log(post);
 
   const {
     publishedAt,

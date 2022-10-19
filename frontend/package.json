@@ -5,11 +5,18 @@
   "description": "Rock Digital Web Agency",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/register": "^7.18.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
+    "esbuild": "^0.15.11",
+    "express": "^4.18.2",
+    "ignore-styles": "^5.0.1",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-async-script-loader": "^0.3.0",
@@ -29,7 +36,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch src/scss -o public/css/main.css"
+    "ssr": "node server/index.js",
+    "client:build": "esbuild src/index.js --bundle  --loader:.js=jsx --loader:.jpeg=dataurl --loader:.png=dataurl --loader:.avif=dataurl --loader:.jpg=dataurl --outfile=built/IndexBundle.js",
+    "server:build": "esbuild server/server.js --bundle --loader:.js=jsx --loader:.jpeg=dataurl --loader:.png=dataurl --loader:.avif=dataurl --loader:.jpg=dataurl --outfile=built/server.js --platform=node"
   },
   "eslintConfig": {
     "extends": [

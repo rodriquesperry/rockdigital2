@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 import axios from 'axios';
 
-import './BlogPosts.styles.css';
+import './blogPosts.styles.css';
 
 const BlogPost = () => {
   const [error, setError] = useState(null);
@@ -31,7 +31,7 @@ const BlogPost = () => {
         posts.map((post, i) => {
           if (!post.attributes.featured && i >= 2) {
             return (
-              <Col xs={3} className='post-col'>
+              <Col md={6} lg={3} className='post-col'>
                 <Link to={`/blog/blogpost/${post.id}`}>
                   <Card>
                     <Card.Img

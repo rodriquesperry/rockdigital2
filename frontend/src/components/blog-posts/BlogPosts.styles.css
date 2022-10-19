@@ -1,15 +1,36 @@
 .posts {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
 }
 
-.post-col {
-  margin: 0 0 5rem 0;
+.posts .post-col {
+  padding: 0 0.5rem;
 }
 
-.posts .card {
-  width: 94%;
-  height: 350px;
+.posts a {
+  text-decoration: none;
+  color: rgb(34, 21, 6);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .posts .post-col {
+    padding: 0;
+  }
+
+  .post-col {
+    margin: 0 0 0 0;
+  }
+
+  .posts .card {
+    width: 94%;
+    height: 350px;
+  }
 }
