@@ -30,7 +30,7 @@
     },
     "short_description": {
       "type": "richtext",
-      "maxLength": 455
+      "maxLength": 425
     },
     "author_image": {
       "type": "media",
@@ -42,7 +42,7 @@
     },
     "title": {
       "type": "string",
-      "maxLength": 100
+      "maxLength": 90
     },
     "author": {
       "type": "string",
