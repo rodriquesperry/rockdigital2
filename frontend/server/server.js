@@ -32,7 +32,67 @@ app.use('^/$', (req, res, next) => {
   });
 });
 
+app.use('/services', (req, res, next) => {
+  fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send('Some error happened');
+    }
+
+    res.send(
+      data.replace(
+        '<div id="root"></div>',
+        `<div id="root">${ReactDomServer.renderToString(
+          <StaticRouter location={req.url}>
+            <App />
+          </StaticRouter>
+        )}</div>`
+      )
+    );
+  });
+});
+
+app.use('/portfolio', (req, res, next) => {
+  fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send('Some error happened');
+    }
+
+    res.send(
+      data.replace(
+        '<div id="root"></div>',
+        `<div id="root">${ReactDomServer.renderToString(
+          <StaticRouter location={req.url}>
+            <App />
+          </StaticRouter>
+        )}</div>`
+      )
+    );
+  });
+});
+
 app.use('/contact', (req, res, next) => {
+  fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send('Some error happened');
+    }
+
+    res.send(
+      data.replace(
+        '<div id="root"></div>',
+        `<div id="root">${ReactDomServer.renderToString(
+          <StaticRouter location={req.url}>
+            <App />
+          </StaticRouter>
+        )}</div>`
+      )
+    );
+  });
+});
+
+app.use('/blog', (req, res, next) => {
   fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
     if (err) {
       console.log(err);
