@@ -125,12 +125,6 @@
   top: 68%;
 }
 
-.div1:hover,
-.div2:hover,
-.div3:hover .div-content {
-  height: 100%;
-}
-
 .build-relationships-container {
   margin: 5rem 0 0;
 }
@@ -242,8 +236,8 @@
   background-color: rgb(242, 242, 242);
   width: 100%;
   height: 500px;
-  margin: 0;
-  padding: 0 .5rem;
+  margin: 0 0 3rem;
+  padding: 0 0.5rem;
 }
 
 .ready-header {
@@ -332,7 +326,7 @@
   }
 
   .build-relationships-container {
-    margin: 9rem 0 6rem;
+    margin: 6rem 0 6rem;
   }
 
   .divs {
@@ -423,11 +417,12 @@
   .parallax-btn {
     color: #fff;
     background-color: rgb(255, 183, 0);
+    font-family: Montserrat, sans-serif;
     text-decoration: none;
     font-size: 2rem;
     padding: 0.5rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 20%;
     text-align: center;
   }
@@ -443,7 +438,7 @@
   }
 
   .reviews-container h2 {
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 
   .review {
@@ -501,7 +496,7 @@
     background-color: rgb(242, 242, 242);
     width: 80%;
     height: 500px;
-    margin: auto auto 5rem auto;
+    margin: auto auto 9rem auto;
   }
 
   .ready-header {

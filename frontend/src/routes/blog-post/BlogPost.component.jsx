@@ -31,7 +31,7 @@ const BlogPost = () => {
         .catch((error) => setError(error));
     };
     getPost();
-  }, []);
+  }, [id]);
 
   const {
     publishedAt,

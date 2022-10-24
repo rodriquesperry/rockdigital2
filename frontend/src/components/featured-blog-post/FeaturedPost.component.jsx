@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -30,8 +29,12 @@ const FeaturedPost = () => {
         posts.map((post, i) => {
           if (post.attributes.featured) {
             return (
-              <Col md={(6, { order: 1 })} className='featured-container' key={i}>
-                <Link to={`/blog/blogpost/${post.id}`}>
+              <Col
+                md={(6, { order: 1 })}
+                className='featured-container'
+                key={i}
+              >
+                <a href={`/blog/blogpost/${post.id}`}>
                   <Card key={i} className='featured'>
                     <Card.Img
                       variant='top'
@@ -53,18 +56,17 @@ const FeaturedPost = () => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                </Link>
+                </a>
               </Col>
             );
           }
-          return null;
         })}
-      <Col md={6, { order: 2 }} lg={3}>
+      <Col md={(6, { order: 2 })} lg={3}>
         {posts &&
           posts.map((post, i) => {
             if (!post.attributes.featured && i <= 1)
               return (
-                <Link to={`/blog/blogpost/${post.id}`} key={i}>
+                <a href={`/blog/blogpost/${post.id}`} key={i}>
                   <Card key={i} className='headline-posts order-2'>
                     <Card.Img
                       variant='top'
@@ -86,9 +88,9 @@ const FeaturedPost = () => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                </Link>
+                </a>
               );
-              return null;
+            return null;
           })}
       </Col>
     </>

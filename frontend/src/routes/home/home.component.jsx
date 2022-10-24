@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet';
 
 import CarouselTopPage from '../../components/carousels/top-page/carousel.component';
 import CarouselReview from '../../components/carousels/reviews/carousel-review.component';
 import HomePortfolioItem from '../../components/home-portfolio-items/HomePortfolioItem.component';
-import PortfolioItem from '../../components/portfolio-item/PortfolioItem.component';
 
 import rec from '../../assets/rec.png';
 
@@ -161,7 +159,7 @@ const Home = () => {
             </div>
             <div className='ready-btn'>
               <a href='/contact' className='btn'>
-                Click Here
+                CLICK HERE
               </a>
             </div>
           </div>

@@ -74,7 +74,7 @@
 
   .info-pic {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .author-info img {

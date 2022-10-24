@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -32,7 +31,7 @@ const BlogPost = () => {
           if (!post.attributes.featured && i >= 2) {
             return (
               <Col md={6} lg={3} className='post-col' key={i}>
-                <Link to={`/blog/blogpost/${post.id}`}>
+                <a href={`/blog/blogpost/${post.id}`}>
                   <Card>
                     <Card.Img
                       variant='top'
@@ -54,7 +53,7 @@ const BlogPost = () => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                </Link>
+                </a>
               </Col>
             );
           }

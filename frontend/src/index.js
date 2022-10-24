@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import { ParallaxProvider } from 'react-scroll-parallax';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
@@ -16,9 +14,7 @@ const root = ReactDOM.hydrateRoot(document.getElementById('root', <App />));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ParallaxProvider>
-        <App />
-      </ParallaxProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

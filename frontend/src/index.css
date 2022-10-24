@@ -5,8 +5,6 @@ body {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* padding-right: calc(2.8rem * 0.9);
-  padding-left: calc(2.8rem * 0.9); */
   color: rgb(34, 21, 6);
   overflow-x: hidden;
   opacity: 1;

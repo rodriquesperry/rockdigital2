@@ -18,7 +18,6 @@ import './navigation.styles.css';
 
 const Navigation = () => {
   const offCanvasRef = useRef();
-  const offsetValue = -56;
 
   const closeOffcanvas = () => offCanvasRef.current.backdrop.click();
 
