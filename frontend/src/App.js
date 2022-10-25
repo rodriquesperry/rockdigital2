@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
+
+import ReactGA from "react-ga4";
 
 import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
@@ -14,6 +16,11 @@ import BlogPost from './routes/blog-post/BlogPost.component';
 import Contact from './routes/contact/contact.component';
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-YJKD269K62');
+    ReactGA.send({hitType: 'pageview', page: window.location.pathname});
+  });
+
   return (
     <>
       <Routes>
