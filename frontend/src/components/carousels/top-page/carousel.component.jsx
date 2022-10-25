@@ -2,9 +2,9 @@ import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
-import WebDesign from '../../../assets/web-design-full.jpeg';
-import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
+import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.avif';
+import WebDesign from '../../../assets/web-design-full.avif';
+import DigitalMarketing from '../../../assets/digital-marketing.avif';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';
@@ -13,7 +13,6 @@ const CarouselTopPage = () => {
   let rando = Math.floor(Math.random() * 2);
 
   let routes = ['/website-improvement', '/website-design-and-development'];
-
 
   return (
     <div>

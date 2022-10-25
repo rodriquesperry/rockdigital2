@@ -16,7 +16,7 @@
 
 .website-maintenance-img-container::before {
   content: '';
-  background-image: url('../../assets/website-maintenance.jpeg');
+  background-image: url('../../assets/website-maintenance.avif');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

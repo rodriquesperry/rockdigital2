@@ -60,6 +60,7 @@ const FeaturedPost = () => {
               </Col>
             );
           }
+          return null;
         })}
       <Col md={(6, { order: 2 })} lg={3}>
         {posts &&

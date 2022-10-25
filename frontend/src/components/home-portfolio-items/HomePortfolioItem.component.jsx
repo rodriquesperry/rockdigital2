@@ -49,6 +49,7 @@ const PortfolioItem = () => {
                 </div>
               </>
             );
+            return null;
         })}
     </>
   );
