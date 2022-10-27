@@ -32,10 +32,10 @@ const WebsiteImprovement = () => {
             <p>
               As a full service digital agency, we provide many services and
               strategies for your success. Whether it be local SEO,
-              Pay-per-click marketing or content marketing we have are here to
-              help you reach your business goals. Drop us a line with what you
-              are looking for and we'll get right back with you. We look forward
-              to working with you.
+              Pay-per-click marketing or content marketing we are here to help
+              you reach your business goals. Drop us a line with what you are
+              looking for and we'll get right back with you. We look forward to
+              working with you.
             </p>
             <p></p>
           </div>

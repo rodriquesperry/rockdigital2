@@ -35,11 +35,11 @@ const DesignAndDevelopment = () => {
               want.{' '}
             </p>
             <p>
-              Our process is painless. It all starts with a conversation and
-              ends with a custom made solution that fosters client and customer
-              satisfaction. Fill in the required information below and then
-              check your email for follow-up instructions. We look forward to
-              working with you.
+              Our process is painless and produce the results you desire. It all
+              starts with a conversation and ends with a custom made solution
+              that fosters client and customer satisfaction. Fill in the
+              required information below and then check your email for follow-up
+              instructions. We look forward to working with you.
             </p>
           </div>
           <div className='design-and-development-contact-form'>
