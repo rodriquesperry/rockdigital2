@@ -34,14 +34,14 @@
     grid-template-columns: 1fr;
     row-gap: 3rem; }
     .home-container .main-container .divs .div1 {
-      background-image: url("../assets/web-design.avif");
+      background-image: url("../assets/web-design.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
       height: 300px;
       position: relative; }
     .home-container .main-container .divs .div2 {
-      background-image: url("../assets/web-maintenance.avif");
+      background-image: url("../assets/web-maintenance.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -49,7 +49,7 @@
       height: 300px;
       position: relative; }
     .home-container .main-container .divs .div3 {
-      background-image: url("../assets/web-improvement.avif");
+      background-image: url("../assets/web-improvement.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
@@ -158,7 +158,7 @@
       text-align: center;
       padding-top: calc(10% - 40px); }
   .home-container .parallax1 {
-    background-image: url("../assets/pexels-hasan-albari-1229861.avif");
+    background-image: url("../assets/pexels-hasan-albari-1229861.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -232,7 +232,7 @@
           padding: 0 1.5rem;
           margin: 0; }
     .home-container .main-container .parallax1 {
-      background-image: url("../assets/pexels-hasan-albari-1229861.avif");
+      background-image: url("../assets/pexels-hasan-albari-1229861.jpeg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -261,7 +261,7 @@
             max-width: 98%;
             border: 0.1px solid #221506; }
     .home-container .main-container .parallax2 {
-      background-image: url("../assets/placeholder.avif");
+      background-image: url("../assets/placeholder.jpeg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;

@@ -15,7 +15,7 @@
 
 .portfolio-img-container::before {
   content: '';
-  background-image: url('../../assets/portfolio.avif');
+  background-image: url('../../assets/portfolio.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

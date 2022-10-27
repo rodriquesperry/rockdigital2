@@ -6,7 +6,7 @@ import CarouselTopPage from '../../components/carousels/top-page/carousel.compon
 import CarouselReview from '../../components/carousels/reviews/carousel-review.component';
 import HomePortfolioItem from '../../components/home-portfolio-items/HomePortfolioItem.component';
 
-import rec from '../../assets/rec.avif';
+import rec from '../../assets/rec.png';
 
 import './home.styles.css';
 

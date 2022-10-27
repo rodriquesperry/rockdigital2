@@ -2,9 +2,9 @@ import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.webp';
-import WebDesign from '../../../assets/web-design-full.avif';
-import DigitalMarketing from '../../../assets/digital-marketing.avif';
+import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
+import WebDesign from '../../../assets/web-design-full.jpeg';
+import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';

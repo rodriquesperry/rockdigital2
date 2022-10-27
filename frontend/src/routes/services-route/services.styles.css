@@ -15,7 +15,7 @@
 
 .services-img-container::before {
   content: '';
-  background-image: url('../../assets/services.avif');
+  background-image: url('../../assets/services.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

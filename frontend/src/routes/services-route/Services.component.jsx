@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-import WebDesignService from '../../assets/web-design-service.avif';
-import SeoService from '../../assets/seo-service.avif';
-import WebsiteImprovement from '../../assets/website-improvement-maintenance.avif';
+import WebDesignService from '../../assets/web-design-service.jpeg';
+import SeoService from '../../assets/seo-service.jpeg';
+import WebsiteImprovement from '../../assets/website-improvement-maintenance.jpeg';
 
 import './services.styles.css';
 

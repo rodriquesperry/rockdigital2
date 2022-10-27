@@ -16,7 +16,7 @@
 
 .design-and-development-img-container::before {
   content: '';
-  background-image: url('../../assets/website-design.avif');
+  background-image: url('../../assets/website-design.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
