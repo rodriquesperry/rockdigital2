@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import ReactGA from "react-ga4";
+import ReactGA from 'react-ga4';
 
 import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
