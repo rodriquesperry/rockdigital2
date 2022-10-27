@@ -12,7 +12,7 @@ const FeaturedPost = () => {
   useEffect(() => {
     const getPosts = () => {
       axios
-        .get('http://localhost:1337/api/posts?populate=*')
+        .get('http://rockdigital.agency:1337/api/posts?populate=*')
         .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));
     };
@@ -38,7 +38,7 @@ const FeaturedPost = () => {
                   <Card key={i} className='featured'>
                     <Card.Img
                       variant='top'
-                      src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
+                      src={`http://rockdigital.agency:1337${post.attributes.featured_image.data.attributes.url}`}
                     />
                     <Card.Body>
                       <Card.Title>
@@ -71,7 +71,7 @@ const FeaturedPost = () => {
                   <Card key={i} className='headline-posts order-2'>
                     <Card.Img
                       variant='top'
-                      src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
+                      src={`http://rockdigital.agency:1337${post.attributes.featured_image.data.attributes.url}`}
                     />
                     <Card.Body>
                       <Card.Title>
