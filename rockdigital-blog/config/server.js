@@ -4,5 +4,5 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: "https://rockdigital.agency",
+  url: "https://rockdigital.agency/dashboard",
 });
