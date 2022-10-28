@@ -15,7 +15,7 @@ const Footer = () => {
   useEffect(() => {
     const getPosts = () => {
       axios
-        .get('http://localhost:1337/api/posts?populate=*')
+        .get('https://rockdigital.agency/dashboard/api/posts?populate=*')
         .then((data) => setRecentPosts(data.data.data));
     };
     getPosts();
@@ -52,9 +52,9 @@ const Footer = () => {
           if (i >= recentPosts.length - 4) {
             return (
               <p key={i}>
-               {/*} <a href={`/blog/blogpost/${recentPost.id}`}>
+               <a href={`/blog/blogpost/${recentPost.id}`}>
                   {recentPost.attributes.title.toUpperCase()}
-            </a> */}
+            </a>
               </p>
             );
           }
@@ -68,7 +68,7 @@ const Footer = () => {
           width='400'
           height='250'
           style={{ border: 0 }}
-          allowFullscreen=''
+          allowFullScreen=''
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>

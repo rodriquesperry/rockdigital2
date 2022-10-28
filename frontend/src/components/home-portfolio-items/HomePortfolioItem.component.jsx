@@ -13,9 +13,10 @@ const PortfolioItem = () => {
         .then((data) => setPortfolioItems(data.data.data))
         .catch((error) => setError(error));
     };
-    console.log(portfolioItems);
     getPortfolioItems();
   }, []);
+
+  console.log(portfolioItems);
 
   if (error) {
     return <div>An error occurred: {error.message}</div>;
@@ -34,11 +35,11 @@ const PortfolioItem = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <img
-                      src={`http://localhost:1337${portfolioItem.attributes.image.data.attributes.url}`}
+                    {/*<img
+                      src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
                       alt=''
                       className='img-fluid'
-                    />
+                    />*/}
                     {/*<div className='img-info'>
                     <div className='text'>
                       <h3>{portfolioItem.attributes.name}</h3>

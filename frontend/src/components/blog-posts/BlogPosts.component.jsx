@@ -14,7 +14,7 @@ const BlogPost = () => {
   useEffect(() => {
     const getPosts = async () => {
       await axios
-        .get('http://localhost:1337/api/posts?populate=*')
+        .get('https://rockdigital.agency/dashboard/api/posts?populate=*')
         .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));
     };
