@@ -11,7 +11,7 @@ const HomePortfolioItem = () => {
   useEffect(() => {
     const getPortfolioItems = async () => {
       await axios
-        .get('http://localhost:1337/api/portfolio-items?populate=*')
+        .get('https://rockdigital.agency/dashboard/api/portfolio-items?populate=*')
         .then((data) => setPortfolioItems(data.data.data))
         .catch((error) => setError(error));
     };
