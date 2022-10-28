@@ -52,9 +52,9 @@ const Footer = () => {
           if (i >= recentPosts.length - 4) {
             return (
               <p key={i}>
-                <a href={`/blog/blogpost/${recentPost.id}`}>
+               {/*} <a href={`/blog/blogpost/${recentPost.id}`}>
                   {recentPost.attributes.title.toUpperCase()}
-                </a>
+            </a> */}
               </p>
             );
           }
@@ -68,9 +68,9 @@ const Footer = () => {
           width='400'
           height='250'
           style={{ border: 0 }}
-          allowfullscreen=''
+          allowFullscreen=''
           loading='lazy'
-          referrerpolicy='no-referrer-when-downgrade'
+          referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
       </div>
     </div>
