@@ -18,7 +18,7 @@ const BlogPost = () => {
   useEffect(() => {
     const getPost = () => {
       axios
-        .get(`http://rockdigital.agency/dashboard/api/posts/${id}?populate=*`)
+        .get(`https://rockdigital.agency/dashboard/api/posts/${id}?populate=*`)
         .then((data) => {
           setPost(data.data.data.attributes);
           setAuthorImage(
@@ -65,7 +65,7 @@ const BlogPost = () => {
               <div className='blog-post-header-background'></div>
               <div className='header-content-container'>
                 <div className='col'>
-                  <img src={`http://rockdigital.agency/dashboard${featImage}`} alt='' fluid />
+                  <img src={`https://rockdigital.agency/dashboard${featImage}`} alt='' fluid />
                 </div>
                 <div className='col header-text'>
                   <h2>{title}</h2>
@@ -75,7 +75,7 @@ const BlogPost = () => {
               </div>
               <div className='author-info'>
                 <div className='col-3 info-pic'>
-                  <img src={`http://rockdigital.agency/dashboard${authorImage}`} alt='' />
+                  <img src={`https://rockdigital.agency/dashboard${authorImage}`} alt='' />
                 </div>
                 <div className='info-text'>
                   <h5>{author}</h5>
