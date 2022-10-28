@@ -13,6 +13,7 @@ const PortfolioItem = () => {
         .then((data) => setPortfolioItems(data.data.data))
         .catch((error) => setError(error));
     };
+    console.log(portfolioItems);
     getPortfolioItems();
   }, []);
 
