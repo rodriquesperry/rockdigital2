@@ -15,7 +15,7 @@ const Footer = () => {
   useEffect(() => {
     const getPosts = () => {
       axios
-        .get('https://rockdigital.agency/dashboard/api/posts?populate=*')
+        .get('http://localhost:1337/api/posts?populate=*')
         .then((data) => setRecentPosts(data.data.data));
     };
     getPosts();

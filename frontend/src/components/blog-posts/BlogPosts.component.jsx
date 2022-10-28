@@ -14,7 +14,7 @@ const BlogPost = () => {
   useEffect(() => {
     const getPosts = async () => {
       await axios
-        .get('https://rockdigital.agency/api/posts?populate=*')
+        .get('http://localhost:1337/api/posts?populate=*')
         .then((data) => setPosts(data.data.data.reverse()))
         .catch((error) => setError(error));
     };
@@ -35,7 +35,7 @@ const BlogPost = () => {
                   <Card>
                     <Card.Img
                       variant='top'
-                      src={`https://rockdigital.agency/dashboard${post.attributes.featured_image.data.attributes.url}`}
+                      src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
                     />
                     <Card.Body>
                       <Card.Title>
