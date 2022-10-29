@@ -9,7 +9,9 @@ const PortfolioItem = () => {
   useEffect(() => {
     const getPortfolioItems = async () => {
       await axios
-        .get('https://rockdigital.agency/dashboard/api/portfolio-items?populate=*')
+        .get(
+          'https://rockdigital.agency/dashboard/api/portfolio-items?populate=*'
+        )
         .then((data) => setPortfolioItems(data.data.data))
         .catch((error) => setError(error));
     };
@@ -35,11 +37,11 @@ const PortfolioItem = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    {/*<img
+                    <img
                       src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
                       alt=''
                       className='img-fluid'
-                    />*/}
+                    />
                     {/*<div className='img-info'>
                     <div className='text'>
                       <h3>{portfolioItem.attributes.name}</h3>
@@ -51,7 +53,7 @@ const PortfolioItem = () => {
                 </div>
               </>
             );
-            return null;
+          return null;
         })}
     </>
   );
