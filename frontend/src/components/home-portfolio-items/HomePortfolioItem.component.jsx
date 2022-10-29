@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
-const PortfolioItem = () => {
+const HomePortfolioItem = () => {
   const [error, setError] = useState(null);
   const [portfolioItems, setPortfolioItems] = useState([]);
 
@@ -28,29 +28,28 @@ const PortfolioItem = () => {
     <>
       {portfolioItems &&
         portfolioItems.map((portfolioItem, i) => {
-          if (i >= portfolioItems.length - 4)
-            return (
-              <>
-                <div className='portfolio-item' key={i}>
-                  <a
-                    href={portfolioItem.attributes.url}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <img
-                      src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
-                      alt=''
-                      className='img-fluid'
-                    />
-                  </a>
-                  <h4>{portfolioItem.attributes.name}</h4>
-                </div>
-              </>
-            );
+          if (i >= portfolioItems.length - 4) console.log(i);
+          return (
+          
+              <div className='portfolio-item' key={i} >
+                <a
+                  href={portfolioItem.attributes.url}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img
+                    src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
+                    alt=''
+                    className='img-fluid'
+                  />
+                </a>
+                <h4>{portfolioItem.attributes.name}</h4>
+              </div>
+          );
           return null;
         })}
     </>
   );
 };
 
-export default PortfolioItem;
+export default HomePortfolioItem;
