@@ -193,12 +193,11 @@
   font-weight: bold;
 }
 
-
 .review {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1rem 0 5rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .review p {
@@ -231,7 +230,9 @@
 }
 
 .portfolio-items {
-  margin-top: 5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .ready-container {
@@ -248,7 +249,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 .ready-btn {
@@ -400,7 +401,6 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
-    margin-bottom: 0;
   }
 
   #parallax-1-text {
@@ -436,11 +436,11 @@
   }
 
   .parallax2 {
-    /* background-image: url('../../assets/placeholder.jpeg');
+    background-image: url('../../assets/placeholder.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed; */
+    background-attachment: fixed;
     height: 45vh;
   }
 
@@ -457,6 +457,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 5rem;
     padding: 0;
   }
   .review p {
@@ -488,6 +489,7 @@
     grid-column-gap: 12px;
     grid-row-gap: 15px;
     justify-items: center;
+    margin-top: 5rem;
   }
 
   .home-container .portfolio-item:nth-child(odd) {

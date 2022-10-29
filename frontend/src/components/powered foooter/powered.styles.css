@@ -1,13 +1,13 @@
 .powered-by {
-    background-color: rgb(48, 48, 48);
-    color: #fff;
+  background-color: rgb(48, 48, 48);
+  color: #fff;
 }
 
 .powered-by small {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .powered-by a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }

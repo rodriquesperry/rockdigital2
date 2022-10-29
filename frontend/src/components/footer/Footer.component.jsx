@@ -22,6 +22,7 @@ const Footer = () => {
   }, []);
 
   return (
+    
     <div className='footer-container row d-none d-lg-grid'>
       <div className='section col-3'>
         <h2 id='footer-business-name'>ROCK DIGITAL</h2>
