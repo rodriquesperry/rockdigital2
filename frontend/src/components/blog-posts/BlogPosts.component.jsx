@@ -35,7 +35,7 @@ const BlogPost = () => {
                   <Card>
                     <Card.Img
                       variant='top'
-                      src={`http://localhost:1337${post.attributes.featured_image.data.attributes.url}`}
+                      src={`https://rockdigital.agency/dashboard${post.attributes.featured_image.data.attributes.url}`}
                     />
                     <Card.Body>
                       <Card.Title>
