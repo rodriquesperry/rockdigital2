@@ -8,11 +8,7 @@ module.exports = [
       enabled: true,
       methods: ["*"],
       headers: ["*"],
-      origin: [
-        "http://localhost:1337",
-        "https://rockdigital.agency",
-        "http://localhost:3000",
-      ],
+      origin: ["*"],
     },
   },
   "strapi::logger",
