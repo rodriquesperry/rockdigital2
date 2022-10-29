@@ -42,12 +42,6 @@ const PortfolioItem = () => {
                       alt=''
                       className='img-fluid'
                     />
-                    {/*<div className='img-info'>
-                    <div className='text'>
-                      <h3>{portfolioItem.attributes.name}</h3>
-                      <p>{portfolioItem.attributes.description}</p>
-                    </div>
-          </div>*/}
                   </a>
                   <h4>{portfolioItem.attributes.name}</h4>
                 </div>
