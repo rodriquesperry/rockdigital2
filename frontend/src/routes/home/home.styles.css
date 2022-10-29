@@ -241,6 +241,7 @@
   height: 500px;
   margin: 0 0 3rem;
   padding: 0 0.5rem;
+  border: .01em solid rgb(34, 21, 6);
 }
 
 .ready-header {

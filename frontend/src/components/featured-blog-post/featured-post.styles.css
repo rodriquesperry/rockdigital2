@@ -1,0 +1,20 @@
+@media (hover: hover) and (pointer: fine) {
+  .row {
+    height: 100%;
+  }
+
+  .featured-container img {
+    max-height: 665px;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .headline-posts-col {
+    height: 665px;
+  }
+
+  .headline-posts {
+    max-height: 500px;
+  }
+}

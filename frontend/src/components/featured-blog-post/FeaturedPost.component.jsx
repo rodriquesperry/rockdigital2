@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+
+import './featured-post.styles.css';
 
 const FeaturedPost = () => {
   const [error, setError] = useState(null);
@@ -24,14 +27,14 @@ const FeaturedPost = () => {
   }
 
   return (
-    <>
+    <Row>
       {posts &&
         posts.map((post, i) => {
           if (post.attributes.featured) {
             return (
               <Col
-                md={(6, { order: 1 })}
                 className='featured-container'
+                md={(6, { order: 1 })}
                 key={i}
               >
                 <a href={`/blog/blogpost/${post.id}`}>
@@ -39,6 +42,7 @@ const FeaturedPost = () => {
                     <Card.Img
                       variant='top'
                       src={`https://rockdigital.agency/dashboard${post.attributes.featured_image.data.attributes.url}`}
+                      className='img-fluid'
                     />
                     <Card.Body>
                       <Card.Title>
@@ -62,7 +66,7 @@ const FeaturedPost = () => {
           }
           return null;
         })}
-      <Col md={(6, { order: 2 })} lg={3}>
+      <Col md={(6, { order: 2 })} lg={3} className='headline-posts-col'>
         {posts &&
           posts.map((post, i) => {
             if (!post.attributes.featured && i <= 1)
@@ -72,6 +76,7 @@ const FeaturedPost = () => {
                     <Card.Img
                       variant='top'
                       src={`https://rockdigital.agency/dashboard${post.attributes.featured_image.data.attributes.url}`}
+                      className='img-fluid'
                     />
                     <Card.Body>
                       <Card.Title>
@@ -94,7 +99,7 @@ const FeaturedPost = () => {
             return null;
           })}
       </Col>
-    </>
+    </Row>
   );
 };
 
