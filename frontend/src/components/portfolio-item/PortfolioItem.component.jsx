@@ -35,7 +35,7 @@ const HomePortfolioItem = () => {
                   rel='noreferrer'
                 >
                   <img
-                    src={`http://localhost:1337${portfolioItem.attributes.image.data.attributes.url}`}
+                    src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
                     alt=''
                     className='img-fluid'
                   />

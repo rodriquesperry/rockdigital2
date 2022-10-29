@@ -157,9 +157,10 @@
   background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 70vh;
+  background-size: contain;
+  /* background-attachment: fixed; */
+  height: 250px;
+  margin-bottom: 4rem;
 }
 
 #parallax-1-text {
@@ -191,6 +192,7 @@
   padding: 0.5rem;
   font-weight: bold;
 }
+
 
 .review {
   display: flex;
@@ -398,6 +400,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
+    margin-bottom: 0;
   }
 
   #parallax-1-text {
@@ -430,6 +433,15 @@
     background-color: #fff;
     color: rgb(255, 183, 0);
     border: 1px solid rgb(255, 183, 0);
+  }
+
+  .parallax2 {
+    /* background-image: url('../../assets/placeholder.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
+    height: 45vh;
   }
 
   .reviews {
@@ -467,15 +479,6 @@
     border: 0.1px solid rgb(34, 21, 6);
   }
 
-  .parallax2 {
-    background-image: url('../../assets/placeholder.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 45vh;
-  }
-
   .portfolio-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -488,7 +491,7 @@
   }
 
   .home-container .portfolio-item:nth-child(odd) {
-    padding-top: 14rem;
+    padding-top: 15rem;
   }
 
   .ready-container {
