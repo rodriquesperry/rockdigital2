@@ -12,9 +12,6 @@ const PORT = 8000;
 
 const app = express();
 
-var cors = require('cors');
-
-app.use(cors());
 
 app.use('^/$', (req, res, next) => {
   fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
