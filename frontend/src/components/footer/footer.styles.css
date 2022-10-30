@@ -10,11 +10,18 @@
   text-align: center;
 }
 
+.social-header {
+  margin: 2rem 0 0;
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 183, 0, 0.849);
+}
+
 .social-icons {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .social-icon {

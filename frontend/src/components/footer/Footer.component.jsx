@@ -22,12 +22,12 @@ const Footer = () => {
   }, []);
 
   return (
-    
     <div className='footer-container row d-none d-lg-grid'>
       <div className='section col-3'>
         <h2 id='footer-business-name'>ROCK DIGITAL</h2>
+        <h4 className='social-header'>Let's Get Social!</h4>
         <IconContext.Provider value={{ size: 40 }}>
-          <div className='social-icons'>
+        <div className='social-icons'>
             <div className='social-icon'>
               <FaFacebook />
             </div>
@@ -53,9 +53,9 @@ const Footer = () => {
           if (i >= recentPosts.length - 4) {
             return (
               <p key={i}>
-               <a href={`/blog/blogpost/${recentPost.id}`}>
+                <a href={`/blog/blogpost/${recentPost.id}`}>
                   {recentPost.attributes.title.toUpperCase()}
-            </a>
+                </a>
               </p>
             );
           }
