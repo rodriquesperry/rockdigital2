@@ -55,7 +55,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta name='description' content={short_description} />
         <title>{title}</title>
       </Helmet>
       <div className='blog-post-container'>
@@ -65,22 +65,27 @@ const BlogPost = () => {
               <div className='blog-post-header-background'></div>
               <div className='header-content-container'>
                 <div className='col'>
-                  <img src={`https://rockdigital.agency/dashboard${featImage}`} alt='' fluid />
+                  <img
+                    src={`https://rockdigital.agency/dashboard${featImage}`}
+                    alt=''
+                    fluid
+                  />
                 </div>
                 <div className='col header-text'>
                   <h2>{title}</h2>
-                  <p className='short-description'>{short_description}</p>
+                  <p className='short-description d-none d-md-block'>
+                    {short_description}
+                  </p>
                   <p className='read-time'>READ TIME: {read_time}mins</p>
                 </div>
               </div>
               <div className='author-info'>
                 <div className='col-3 info-pic'>
-                  <img src={`https://rockdigital.agency/dashboard${authorImage}`} alt='' />
-                </div>
-                <div className='info-text'>
-                  <h5>{author}</h5>
-                  <h6>{date.toDateString()}</h6>
-                  <small>Tags, categories, hashtags</small>
+                  <div className='info-text'>
+                    <h5>{author}</h5>
+                    <h6>{date.toDateString()}</h6>
+                    <small>Tags, categories, hashtags</small>
+                  </div>
                 </div>
               </div>
             </div>

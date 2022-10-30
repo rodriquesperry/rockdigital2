@@ -7,7 +7,7 @@
     max-height: 665px;
     height: auto;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .headline-posts-col {

@@ -16,7 +16,7 @@ const Home = () => {
       <Helmet>
         <meta
           name='description'
-          content='The best digital agency this side of the Missisip'
+          content=''
         />
         <meta name='keywords' content='web design seo' />
         <title>Home</title>
