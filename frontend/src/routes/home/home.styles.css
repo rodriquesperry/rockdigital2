@@ -308,7 +308,7 @@
   .build-relationships-container,
   .reviews-container,
   .homepage-portfolio-container {
-    padding-top: 6rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

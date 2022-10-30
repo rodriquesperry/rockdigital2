@@ -9,8 +9,10 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        <meta name='description' content='Contact us for web design services' />
-        <meta name='keywords' content='web design seo contact' />
+        <meta
+          name='description'
+          content='Contact us for the best web design and digital marketing services.'
+        />
         <title>Contact Us</title>
       </Helmet>
       <div className='contact-container'>

@@ -10,7 +10,10 @@ const WebsiteImprovement = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta
+          name='description'
+          content='We offer many different options to improve your online presence and keep you ahead of your competition.'
+        />
         <title>Digital Presence Improvent</title>
       </Helmet>
       <div className='improvement-container'>

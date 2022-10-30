@@ -10,7 +10,7 @@ const DesignAndDevelopment = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta name='description' content='We have one goal in mind, to deliver high-quality, growth focused digital solutions that help your business succeed.'/>
         <title>Website Design and Development</title>
       </Helmet>
       <div className='design-and-dev-container'>

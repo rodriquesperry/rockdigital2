@@ -10,7 +10,10 @@ const PortfolioPage = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta
+          name='description'
+          content='Check out our work with clients and personal projects.'
+        />
         <title>Portfolio</title>
       </Helmet>
       <div className='portfolio-container'>

@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta name='description' content='We offer a variety of services to help your business suceed online.'/>
         <title>Services</title>
       </Helmet>
       <div className='services-container'>

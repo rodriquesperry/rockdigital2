@@ -16,9 +16,8 @@ const Home = () => {
       <Helmet>
         <meta
           name='description'
-          content=''
+          content='Rock Digital is a web design and development and digital marketing agency based in Cibolo, Tx right outside of San Antonio.'
         />
-        <meta name='keywords' content='web design seo' />
         <title>Home</title>
       </Helmet>
       <div className='home-container'>

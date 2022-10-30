@@ -10,7 +10,10 @@ const WebsiteMaintenance = () => {
   return (
     <>
       <Helmet>
-        <meta />
+        <meta
+          name='description'
+          content='Your business website is an investment that offers great returns. We offer several website maintenance packages that will take care of your greatest business investment.'
+        />
         <title>Website Improvement</title>
       </Helmet>
       <div className='website-improvement-container'>

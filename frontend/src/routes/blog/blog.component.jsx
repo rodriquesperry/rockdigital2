@@ -17,7 +17,6 @@ const Blog = () => {
           name='description'
           content='A blog about digital trends and best practices for business owners.'
         />
-        <meta name='keywords' content='web design seo blog' />
         <title>Blog</title>
       </Helmet>
       <div className='blog-container'>
