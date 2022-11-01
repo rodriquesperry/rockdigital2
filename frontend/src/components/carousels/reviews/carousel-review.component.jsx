@@ -17,12 +17,15 @@ const CarouselReview = () => {
     const getReviews = async () => {
       await axios
         .get('https://rockdigital.agency/dashboard/api/reviews?populate=*')
-        .then((data) => setReviews(data.data.data));
+        .then((data) => setReviews(data.data.data))
+        .catch((error) => setError(error));
     };
     getReviews();
   }, []);
 
-  console.log(reviews);
+  if (error) {
+    return <div>An error occurred: {error.message}</div>;
+  }
 
   return (
     <div className='review-carousel-container'>
@@ -47,9 +50,11 @@ const CarouselReview = () => {
                         <span className='quote'>"</span>
                       </p>
                     </div>
-                    <div className="reviewer-container">
-                    <p>~</p>
-                    <h4 className='reviewer'>{review.attributes.reviewer_name}</h4>
+                    <div className='reviewer-container'>
+                      <p>~</p>
+                      <h4 className='reviewer'>
+                        {review.attributes.reviewer_name}
+                      </h4>
                     </div>
                   </>
                 );
