@@ -18,13 +18,11 @@
     "esbuild": "^0.15.11",
     "express": "^4.18.2",
     "ignore-styles": "^5.0.1",
-    "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-app-rewired": "^2.2.1",
     "react-async-script-loader": "^0.3.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
-    "react-ga": "^3.3.1",
     "react-ga4": "^1.4.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.6.0",
@@ -37,13 +35,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ssr": "node server/index.js",
-    "client:build": "esbuild src/index.js --bundle  --loader:.js=jsx --loader:.jpeg=dataurl --loader:.png=dataurl --loader:.avif=dataurl --loader:.jpg=dataurl --outfile=built/IndexBundle.js",
-    "server:build": "esbuild server/server.js --bundle --loader:.js=jsx --loader:.jpeg=dataurl --loader:.png=dataurl --loader:.avif=dataurl --loader:.jpg=dataurl --outfile=built/server.js --platform=node"
+    "ssr": "node server/index.js"
   },
   "eslintConfig": {
     "extends": [
@@ -64,9 +60,6 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0",
-    "html-loader": "^1.3.2",
-    "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
   }
 }
