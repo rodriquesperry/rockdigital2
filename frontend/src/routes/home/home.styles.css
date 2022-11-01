@@ -483,12 +483,12 @@
   .review p {
     font-size: 1.5rem;
     font-style: italic;
-    line-height: 2.9rem;
+    line-height: 2.5rem;
     padding: 0rem;
     margin: 1rem 0 2rem;
   }
   .review .quote {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .review .image-container {
     display: flex;
