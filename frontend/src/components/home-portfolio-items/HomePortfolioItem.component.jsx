@@ -28,7 +28,7 @@ const HomePortfolioItem = () => {
     <>
       {portfolioItems &&
         portfolioItems.map((portfolioItem, i) => {
-          if (i >= portfolioItems.length - 4) console.log(i);
+          if (i >= portfolioItems.length - 3)
           return (
           
               <div className='portfolio-item' key={i} >
