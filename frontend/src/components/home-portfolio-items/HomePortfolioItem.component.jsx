@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
+import './HomePortfolio.styles.css';
+
 const HomePortfolioItem = () => {
   const [error, setError] = useState(null);
   const [portfolioItems, setPortfolioItems] = useState([]);
@@ -28,7 +30,7 @@ const HomePortfolioItem = () => {
     <>
       {portfolioItems &&
         portfolioItems.map((portfolioItem, i) => {
-          if (i >= portfolioItems.length - 3)
+          if (i >= portfolioItems.length - 4)
           return (
           
               <div className='portfolio-item' key={i} >
