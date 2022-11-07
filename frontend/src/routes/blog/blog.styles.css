@@ -15,7 +15,7 @@
 
 .img-container::before {
   content: '';
-  background-image: url('../../assets/blog.avif');
+  background-image: url('../../assets/blog.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
