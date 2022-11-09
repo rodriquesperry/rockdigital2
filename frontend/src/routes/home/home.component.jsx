@@ -153,12 +153,12 @@ const Home = () => {
                 pleasure to create a custom website design experience that
                 represents your brand, communicates your brand message and
                 generates your business more leads which increases your overall
-                revenue. Let's get started:
+                revenue. 
               </p>
             </div>
             <div className='ready-btn'>
               <a href='/contact' className='btn'>
-                CLICK HERE
+              Contact us to get started!
               </a>
             </div>
           </div>
