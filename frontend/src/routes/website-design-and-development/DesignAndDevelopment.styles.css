@@ -72,4 +72,9 @@
     padding: 0 15rem;
     text-align: left;
   }
+
+  .design-and-development-text p {
+    margin: 1rem;
+    color: rebeccapurple;
+  }
 }

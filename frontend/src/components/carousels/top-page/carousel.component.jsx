@@ -31,10 +31,17 @@ const CarouselTopPage = () => {
                   <span>ORIGINAL</span>
                 </h3>
               </div>
-              <p>Custom websites designed with your customers in mind.</p>
-              <a href='/website-design-and-development' className='btn'>
-                LEARN MORE
-              </a>
+              <p>
+                Custom websites designed with your customers in mind.
+                <p>
+                  <a
+                    href='/website-design-and-development'
+                    className='btn'
+                  >
+                    Website Design
+                  </a>
+                </p>
+              </p>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -53,10 +60,12 @@ const CarouselTopPage = () => {
                   <span>SUPERIORITY</span>
                 </h3>
               </div>
-              <p>Outperform your competitors with proven processes.</p>
-              <a href='/website-improvement' className='btn'>
-                LEARN MORE
-              </a>
+              <p>
+                Outperform your competitors with proven processes.
+                <a href='/website-improvement' className='btn'>
+                  <p>Online Presence Improvement</p>
+                </a>
+              </p>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -75,10 +84,12 @@ const CarouselTopPage = () => {
                   <span>CONSISTENT</span>
                 </h3>
               </div>
-              <p>Customers will love to interact with your business online.</p>
-              <a href={routes[rando]} className='btn'>
-                LEARN MORE
-              </a>
+              <p>
+                Customers will love to interact with your business online
+                <a href={routes[rando]} className='btn'>
+                  <p>Get Started Now</p>
+                </a>
+              </p>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
