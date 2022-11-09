@@ -33,14 +33,12 @@ const CarouselTopPage = () => {
               </div>
               <p>
                 Custom websites designed with your customers in mind.
-                <p>
-                  <a
-                    href='/website-design-and-development'
-                    className='btn'
-                  >
-                    Website Design
-                  </a>
-                </p>
+                <a
+                  href='/website-design-and-development'
+                  className='btn min-btn-width'
+                >
+                  <p>Website Design</p>
+                </a>
               </p>
             </div>
           </Carousel.Caption>
@@ -86,7 +84,7 @@ const CarouselTopPage = () => {
               </div>
               <p>
                 Customers will love to interact with your business online
-                <a href={routes[rando]} className='btn'>
+                <a href={routes[rando]} className='btn min-btn-width'>
                   <p>Get Started Now</p>
                 </a>
               </p>

@@ -163,4 +163,8 @@
     font-weight: bold;
     justify-content: center;
   }
+
+  .min-btn-width {
+    width: 35%;
+  }
 }
