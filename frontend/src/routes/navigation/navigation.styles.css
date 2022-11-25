@@ -55,3 +55,28 @@
     color: rgb(207, 168, 68);
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar .navbar-brand {
+    transition: all linear 0.8s;
+    width: 10%;
+  }
+  
+  .navbar .resize {
+    transition: all linear 0.6s;
+    width: 7%;
+    font-size-adjust: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  
+}
+
+@media screen and (min-width: 2560px) {
+  
+}

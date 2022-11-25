@@ -168,3 +168,37 @@
     width: 35%;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-inner .carousel-caption {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 21, 6, 0.349);
+  }
+  
+  .carousel-caption .carousel-caption-block {
+    text-align: start;
+    margin-bottom: 2.5rem;
+  }
+
+  .carousel-caption .carousel-caption-block .btn {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  
+}
+
+@media screen and (min-width: 2560px) {
+  
+}

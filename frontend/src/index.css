@@ -10,6 +10,7 @@ body {
   opacity: 1;
   transition-duration: 1s;
   transition-property: opacity;
+  width: 100%;
 }
 
 body.fade {
