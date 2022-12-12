@@ -183,7 +183,7 @@
   
   .carousel-caption .carousel-caption-block {
     text-align: start;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
 
   .carousel-caption .carousel-caption-block .btn {
@@ -200,5 +200,104 @@
 }
 
 @media screen and (min-width: 2560px) {
-  
+  .carousel {
+    margin-top: 2rem;
+  }
+
+  .carousel-caption {
+    top: 0vh;
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-moz-keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-o-keyframes fadeOut {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .carousel-inner .carousel-caption {
+    height: 900px;
+  }
+
+  .carousel-item .web-design {
+    object-position: 10% 50%;
+  }
+
+  .carousel-caption .carousel-caption-block {
+    display: grid;
+    text-align: center;
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+    -ms-animation: fadeOut ease 2s;
+    animation-delay: 6.3s;
+  }
+
+  .carousel-caption-block .carousel-heading {
+    display: grid;
+    justify-content: start;
+  }
+
+  .carousel-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 5rem;
+  }
+
+  .carousel-heading h3 span {
+    /* margin: 0 0 0 3rem; */
+    /* padding: 0 0 0 2rem; */
+  }
+
+  .carousel-caption-block p {
+    font-size: 1.7rem;
+    text-align-last: left;
+  }
+
+  .carousel-caption .carousel-caption-block .btn {
+    margin: 1rem 0 0;
+    font-size: 1.5rem;
+    max-width: 480px;
+    color: #fff;
+    border: 1px solid rgb(34, 21, 6);
+    background-color: rgb(255, 183, 0);
+    border-radius: 0;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .min-btn-width {
+    width: 35%;
+  }
 }

@@ -2,7 +2,6 @@
   margin-top: 5rem;
   color: #fff;
   background-color: rgb(34, 34, 34);
-  
 }
 
 #footer-business-name {
@@ -44,4 +43,12 @@
 .footer-container .section {
   padding: 5rem 3rem;
   width: 100%;
+}
+
+@media screen and (min-width: 2560px) {
+  .social-icon {
+    width: 15%;
+    padding: 1rem;
+    transition: 0.4s;
+  }
 }
