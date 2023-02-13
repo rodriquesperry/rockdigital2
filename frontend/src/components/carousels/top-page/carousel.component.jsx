@@ -32,7 +32,7 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>
-                Custom websites designed with your customers in mind.
+                Custom websites designed with your customers in mind's.
                 <a
                   href='/website-design-and-development'
                   className='btn min-btn-width'
