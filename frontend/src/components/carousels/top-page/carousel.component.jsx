@@ -3,8 +3,8 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.avif';
-import WebDesign from '../../../assets/web-design-full.jpeg';
-import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
+import WebDesign from '../../../assets/web-design-full.avif';
+import DigitalMarketing from '../../../assets/digital-marketing.avif';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';
@@ -32,7 +32,7 @@ const CarouselTopPage = () => {
                 </h3>
               </div>
               <p>
-                Custom websites designed with your customers in mind's.
+                Custom websites designed with your customers in mind.
                 <a
                   href='/website-design-and-development'
                   className='btn min-btn-width'
