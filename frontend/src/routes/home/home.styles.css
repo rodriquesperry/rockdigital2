@@ -1005,16 +1005,16 @@
   }
 
   .div1 {
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 400px;
   }
   .div2 {
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 400px;
   }
   .div3 {
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 400px;
   }
 
   .div1 h1 {
@@ -1022,13 +1022,13 @@
   }
 
   #development {
-    top: 68%;
-    line-height: 3rem;
+    top: 63%;
+    line-height: 3.5rem;
   }
 
   .divs h1,
   .divs h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .skills {

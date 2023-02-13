@@ -20,8 +20,6 @@ const HomePortfolioItem = () => {
     getPortfolioItems();
   }, []);
 
-  console.log(portfolioItems);
-
   if (error) {
     return <div>An error occurred: {error.message}</div>;
   }
