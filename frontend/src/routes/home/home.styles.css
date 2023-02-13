@@ -64,7 +64,7 @@
 }
 
 .div1 {
-  background-image: url('../../assets/web-design.jpeg');
+  background-image: url('../../assets/web-design.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +74,7 @@
 }
 
 .div2 {
-  background-image: url('../../assets/web-improvement.jpeg');
+  background-image: url('../../assets/web-improvement.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +84,7 @@
 }
 
 .div3 {
-  background-image: url('../../assets/web-maintenance.jpeg');
+  background-image: url('../../assets/web-maintenance.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,7 +156,7 @@
 }
 
 .parallax1 {
-  background-image: url('../../assets/pexels-hasan-albari-1229861.jpeg');
+  background-image: url('../../assets/pexels-hasan-albari-1229861.avif');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -455,7 +455,7 @@
   }
 
   .parallax2 {
-    background-image: url('../../assets/placeholder.jpeg');
+    background-image: url('../../assets/placeholder.avif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -824,7 +824,7 @@
   }
 
   .parallax2 {
-    background-image: url('../../assets/placeholder.jpeg');
+    background-image: url('../../assets/placeholder.avif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1106,7 +1106,7 @@
   }
 
   .parallax2 {
-    background-image: url('../../assets/placeholder.jpeg');
+    background-image: url('../../assets/placeholder.avif');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
