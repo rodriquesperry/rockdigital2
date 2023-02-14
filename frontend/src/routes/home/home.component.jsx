@@ -84,6 +84,9 @@ const Home = () => {
           <div className='skills'>
             <div className='skill-set'>
               <img src={rec} alt='' />
+              <picture>
+                <img src={rec} alt='avif in frameworks' />
+              </picture>
               <h4>Custom Design</h4>
               <p>
                 Get found in search engines and loved by customers with custom
@@ -153,12 +156,12 @@ const Home = () => {
                 pleasure to create a custom website design experience that
                 represents your brand, communicates your brand message and
                 generates your business more leads which increases your overall
-                revenue. 
+                revenue.
               </p>
             </div>
             <div className='ready-btn'>
               <a href='/contact' className='btn'>
-              Contact us to get started!
+                Contact us to get started!
               </a>
             </div>
           </div>
