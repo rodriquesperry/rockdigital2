@@ -2,6 +2,9 @@
   margin-top: 5rem;
   color: #fff;
   background-color: rgb(34, 34, 34);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  /* grid-template-rows: 250px auto; */
 }
 
 #footer-business-name {
@@ -10,7 +13,7 @@
 }
 
 .social-header {
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   text-align: center;
   font-style: italic;
   color: rgba(255, 183, 0, 0.849);
@@ -26,6 +29,7 @@
 .social-icon {
   width: 100%;
   padding: 1rem;
+  margin: 0.8rem 0.5rem;
   transition: 0.4s;
 }
 
@@ -40,9 +44,51 @@
   text-decoration: none;
 }
 
+.footer-container div .posts {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: start;
+}
+
 .footer-container .section {
   padding: 5rem 3rem;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 15rem;
+  }
+
+  .footer-container .section,
+  .about p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .section p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-container .section {
+    padding: 5rem 1.5rem;
+    width: 100%;
+  }
+
+  .footer-container iframe {
+    width: 250px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 2560px) {

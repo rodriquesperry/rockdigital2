@@ -84,9 +84,6 @@ const Home = () => {
           <div className='skills'>
             <div className='skill-set'>
               <img src={rec} alt='' />
-              <picture>
-                <img src={rec} alt='avif in frameworks' />
-              </picture>
               <h4>Custom Design</h4>
               <p>
                 Get found in search engines and loved by customers with custom

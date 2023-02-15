@@ -20,6 +20,7 @@ const CarouselTopPage = () => {
         <Carousel.Item>
           <img
             className='d-block w-100 img-fluid web-design'
+            fetchpriority='high'
             src={WebDesign}
             alt='First slide'
           />

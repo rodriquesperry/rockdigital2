@@ -35,7 +35,7 @@ const CarouselReview = () => {
             {reviews &&
               reviews.map((review, i) => {
                 return (
-                  <>
+                  <div key={i}>
                     {/* <div className='col-12 col-lg-3 image-container'>
                       <img
                         src={`https://rockdigital.agency/dashboard${review.attributes.review_image.data.attributes.url}`}
@@ -56,7 +56,7 @@ const CarouselReview = () => {
                         {review.attributes.reviewer_name}
                       </h4>
                     </div>
-                  </>
+                  </div>
                 );
               })}
           </div>
