@@ -5,12 +5,16 @@
 }
 
 .main-container {
+  height: auto;
+  width: 100%;
   margin-top: 5rem;
 }
 
 .main-container h2 {
   font-size: 2rem;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .main-container h2 span {
