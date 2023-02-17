@@ -66,8 +66,8 @@ const Footer = () => {
         <iframe
           title='GMB Map'
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.0574636866904!2d-98.26790928501919!3d29.602015746291833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c938a1f353e31%3A0xdebac766899af97e!2sRock%20Digital!5e0!3m2!1sen!2sus!4v1666218757128!5m2!1sen!2sus'
-          width='auto'
-          height='250'
+          // width='100'
+          // height='250'
           style={{ border: 0 }}
           allowFullScreen=''
           loading='lazy'

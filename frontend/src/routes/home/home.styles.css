@@ -146,6 +146,7 @@
 
 .skill-set img {
   width: 25%;
+  height: auto;
 }
 
 .skill-set p {
@@ -161,6 +162,7 @@
   background-size: contain;
   height: 250px;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 #parallax-1-text {
@@ -618,6 +620,7 @@
 
   .skill-set img {
     width: 20%;
+    height: auto;
   }
 
   .parallax1 {
@@ -626,6 +629,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
+    width: 100%;
   }
 
   #parallax-1-text {
@@ -771,6 +775,7 @@
 
   .skill-set img {
     width: 20%;
+    height: auto;
   }
 
   .skill-set h4 {
@@ -792,6 +797,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
+    width: 100%;
   }
 
   #parallax-1-text {
@@ -833,6 +839,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 45vh;
+    width: 100%;
   }
 
   .reviews {
@@ -1045,6 +1052,7 @@
 
   .skill-set img {
     width: 20%;
+    height: auto;
   }
 
   .skill-set h4 {
@@ -1066,6 +1074,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
+    width: 100%;
   }
 
   #parallax-1-text {
@@ -1107,6 +1116,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 45vh;
+    width: 100%;
   }
 
   .reviews {
@@ -1323,6 +1333,7 @@
 
   .skill-set img {
     width: 20%;
+    height: auto;
   }
 
   .skill-set h4 {
@@ -1345,6 +1356,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
+    width: 100%;
   }
 
   #parallax-1-text {
@@ -1386,6 +1398,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 45vh;
+    width: 100%;
   }
 
   .reviews {

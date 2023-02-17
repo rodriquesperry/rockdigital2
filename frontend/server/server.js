@@ -9,9 +9,7 @@ import { StaticRouter } from 'react-router-dom/server';
 import App from '../src/App';
 
 const PORT = 8000;
-
 const app = express();
-
 
 app.use('^/$', (req, res, next) => {
   fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {

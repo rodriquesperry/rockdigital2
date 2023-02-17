@@ -9,9 +9,10 @@
   max-height: 700px;
 }
 
-/* .carousel-inner img {
-  opacity: 0.9;
-} */
+.carousel-inner .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
 .carousel-inner .carousel-caption {
   display: grid;
@@ -45,7 +46,7 @@
 .carousel-caption-block p {
   /* font-size: 1.1rem; */
   text-align: center;
-} 
+}
 
 .carousel-caption .carousel-caption-block .btn {
   margin: auto;
@@ -54,7 +55,7 @@
   /* font-size: .9rem; */
   max-width: 280px;
   color: #fff;
-  border: .5px solid rgb(34, 21, 6);
+  border: 0.5px solid rgb(34, 21, 6);
   background-color: rgb(255, 183, 0);
   border-radius: 0;
   font-weight: bold;
@@ -180,7 +181,7 @@
     width: 100%;
     background-color: rgba(34, 21, 6, 0.349);
   }
-  
+
   .carousel-caption .carousel-caption-block {
     text-align: start;
     margin-bottom: 4rem;
@@ -192,11 +193,9 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  
 }
 
 @media screen and (min-width: 2560px) {
