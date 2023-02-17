@@ -2,9 +2,15 @@ import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
 import WebDesign from '../../../assets/web-design-full.jpeg';
+import WebDesign500w from '../../../assets/web-design-full_500px.jpeg';
+import WebDesign344w from '../../../assets/web-design-full_344px.jpeg';
 import DigitalMarketing from '../../../assets/digital-marketing.jpeg';
+import DigitalMarketing500w from '../../../assets/digital-marketing_500px.jpeg';
+import DigitalMarketing344w from '../../../assets/digital-marketing_344px.jpeg';
+import SheratonHotel from '../../../assets/sheraton-houston-st-san-antonio-tx.jpeg';
+import SheratonHotel500w from '../../../assets/sheraton-houston-st-san-antonio-tx_500px.jpeg';
+import SheratonHotel344w from '../../../assets/sheraton-houston-st-san-antonio-tx_344px.jpeg';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';
@@ -21,7 +27,8 @@ const CarouselTopPage = () => {
           <img
             className='d-block w-100 img-fluid web-design'
             fetchpriority='high'
-            src={WebDesign}
+            src={WebDesign344w}
+            srcSet={`${WebDesign344w} 344w, ${WebDesign500w} 500w, ${WebDesign} 1000w`}
             alt='First slide'
           />
           <Carousel.Caption>
@@ -48,6 +55,7 @@ const CarouselTopPage = () => {
           <img
             className='d-block w-100 img-fluid'
             src={DigitalMarketing}
+            srcSet={`${DigitalMarketing344w} 344w, ${DigitalMarketing500w} 500w, ${DigitalMarketing} 1000w`}
             alt='Second slide'
           />
 
@@ -72,6 +80,7 @@ const CarouselTopPage = () => {
           <img
             className='d-block w-100 img-fluid'
             src={SheratonHotel}
+            rcSet={`${SheratonHotel344w} 300w, ${SheratonHotel500w} 500w, ${SheratonHotel} 1000w`}
             alt='Third slide'
           />
 

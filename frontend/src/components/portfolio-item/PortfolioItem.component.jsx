@@ -40,6 +40,8 @@ const PortfolioItem = () => {
                     src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
                     alt=''
                     className='img-fluid'
+                    height=''
+                    width=''
                   />
                 </div>
                 {/*<div className='img-info'>
