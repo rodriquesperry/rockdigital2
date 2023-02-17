@@ -23,8 +23,8 @@ const Home = () => {
       <div className='home-container'>
         <CarouselTopPage />
 
-        <div className='main-container'>
-          <div className='full-service-container'>
+        <div className='main-container w-100'>
+          <div className='full-service-container w-100'>
             <h2>
               A FULL SERVICE DIGITAL <span>&nbsp;AGENCY&nbsp; </span>
             </h2>

@@ -35,11 +35,13 @@ const PortfolioItem = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <img
-                  src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
-                  alt=''
-                  className='img-fluid'
-                />
+                <div className='portfolio-item-img-container'>
+                  <img
+                    src={`https://rockdigital.agency/dashboard${portfolioItem.attributes.image.data.attributes.url}`}
+                    alt=''
+                    className='img-fluid'
+                  />
+                </div>
                 {/*<div className='img-info'>
                     <div className='text'>
                       <h3>{portfolioItem.attributes.name}</h3>

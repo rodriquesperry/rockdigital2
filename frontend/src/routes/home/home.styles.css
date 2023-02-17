@@ -1,5 +1,6 @@
 .home-container {
   height: 100%;
+  width: 100%;
   padding-right: calc(2.8rem * 0.9);
   padding-left: calc(2.8rem * 0.9);
 }
@@ -912,11 +913,11 @@
     grid-column-gap: 12px;
     grid-row-gap: 15px;
     justify-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0 15rem;
   }
 
   .home-container .portfolio-item:nth-child(odd) {
-    padding-top: 15rem;
+    top: 15rem;
   }
 
   .ready-container {
@@ -1186,11 +1187,11 @@
     grid-column-gap: 12px;
     grid-row-gap: 15px;
     justify-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0 15rem;
   }
 
   .home-container .portfolio-item:nth-child(odd) {
-    padding-top: 15rem;
+    top: 15rem;
   }
 
   .ready-container {
@@ -1467,11 +1468,11 @@
     grid-column-gap: 320px;
     grid-row-gap: 15px;
     justify-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0 15rem;
   }
 
   .home-container .portfolio-item:nth-child(odd) {
-    padding-top: 15rem;
+    top: 15rem;
   }
 
   .ready-container {
