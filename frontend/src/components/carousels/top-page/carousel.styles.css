@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel-inner img {
-    width: 500px;
+    width: 687px;
     height: auto;
   }
 
@@ -140,7 +140,7 @@
   }
 
   .carousel-inner img {
-    width: 1000px;
+    width: 100%;
     height: auto;
   }
 
@@ -248,7 +248,7 @@
   }
 
   .carousel-inner img {
-    width: 1000px;
+    width: 1359px;
     height: auto;
   }
 
