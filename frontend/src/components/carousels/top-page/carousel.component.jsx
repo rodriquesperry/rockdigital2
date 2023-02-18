@@ -8,6 +8,12 @@ import WebDesign1000w from '../../../assets/web-design-full_1000px.jpeg';
 import WebDesign1359w from '../../../assets/web-design-full_1359px.jpeg';
 import WebDesign2479w from '../../../assets/web-design-full_2479px.jpeg';
 
+import DigitalMarketing344w from '../../../assets/digital-marketing_344px.jpeg';
+import DigitalMarketing687w from '../../../assets/digital-marketing_687px.jpeg';
+import DigitalMarketing1000w from '../../../assets/digital-marketing_1000px.jpeg';
+import DigitalMarketing1359w from '../../../assets/digital-marketing_1359px.jpeg';
+import DigitalMarketing2479w from '../../../assets/digital-marketing_2479px.jpeg';
+
 
 
 // import '../../../scss/carousel.styles.scss';
