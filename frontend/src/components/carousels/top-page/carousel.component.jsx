@@ -29,6 +29,7 @@ const CarouselTopPage = () => {
             fetchpriority='high'
             src={WebDesign344w}
             srcSet={`${WebDesign344w} 344w, ${WebDesign500w} 500w, ${WebDesign} 1000w`}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 500px, (min-width: 1024px) 1000px, 1000px'
             alt='First slide'
           />
           <Carousel.Caption>
@@ -56,6 +57,7 @@ const CarouselTopPage = () => {
             className='d-block w-100 img-fluid'
             src={DigitalMarketing}
             srcSet={`${DigitalMarketing344w} 344w, ${DigitalMarketing500w} 500w, ${DigitalMarketing} 1000w`}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 500px, (min-width: 1024px) 1000px, 1000px'
             alt='Second slide'
           />
 
@@ -81,6 +83,7 @@ const CarouselTopPage = () => {
             className='d-block w-100 img-fluid'
             src={SheratonHotel}
             rcSet={`${SheratonHotel344w} 300w, ${SheratonHotel500w} 500w, ${SheratonHotel} 1000w`}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 500px, (min-width: 1024px) 1000px, 1000px'
             alt='Third slide'
           />
 
