@@ -15,6 +15,11 @@ import DigitalMarketing1359w from '../../../assets/digital-marketing_1359px.jpeg
 import DigitalMarketing2479w from '../../../assets/digital-marketing_2479px.jpeg';
 
 
+import SheratonHotel344w from '../../../assets/sheraton-houston-st-san-antonio-tx_344px.jpeg';
+import SheratonHotel687w from '../../../assets/sheraton-houston-st-san-antonio-tx_687px.jpeg';
+import SheratonHotel1000w from '../../../assets/sheraton-houston-st-san-antonio-tx_1000px.jpeg';
+import SheratonHotel1359w from '../../../assets/sheraton-houston-st-san-antonio-tx_1359px.jpeg';
+import SheratonHotel2479w from '../../../assets/sheraton-houston-st-san-antonio-tx_2479px.jpeg';
 
 // import '../../../scss/carousel.styles.scss';
 import './carousel.styles.css';
