@@ -14,7 +14,6 @@ import DigitalMarketing1000w from '../../../assets/digital-marketing_1000px.jpeg
 import DigitalMarketing1359w from '../../../assets/digital-marketing_1359px.jpeg';
 import DigitalMarketing2479w from '../../../assets/digital-marketing_2479px.jpeg';
 
-
 import SheratonHotel344w from '../../../assets/sheraton-houston-st-san-antonio-tx_344px.jpeg';
 import SheratonHotel687w from '../../../assets/sheraton-houston-st-san-antonio-tx_687px.jpeg';
 import SheratonHotel1000w from '../../../assets/sheraton-houston-st-san-antonio-tx_1000px.jpeg';
@@ -37,8 +36,8 @@ const CarouselTopPage = () => {
             className='d-block img-fluid web-design'
             fetchpriority='high'
             src={WebDesign344w}
-            srcSet={`${WebDesign344w} 344w, ${WebDesign687w} 687w, ${WebDesign1000w} 1000px, ${WebDesign1359w} 1359w, ${WebDesign2479w} 2479w `}
-            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440) 1359px, (min-width: 2560) 2479px'
+            srcSet={`${WebDesign344w} 344w, ${WebDesign687w} 687w, ${WebDesign1000w} 1000w, ${WebDesign1359w} 1359w, ${WebDesign2479w} 2479w `}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440px) 1359px, (min-width: 2560px) 2479px'
             alt='First slide'
           />
           <Carousel.Caption>
@@ -65,8 +64,8 @@ const CarouselTopPage = () => {
           <img
             className='d-block img-fluid'
             src={DigitalMarketing344w}
-            srcSet={`${DigitalMarketing344w} 344w, ${DigitalMarketing687w} 687w, ${DigitalMarketing1000w} 1000px, ${DigitalMarketing1359w} 1359w, ${DigitalMarketing2479w} 2479w `}
-            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440) 1359px, (min-width: 2560) 2479px'
+            srcSet={`${DigitalMarketing344w} 344w, ${DigitalMarketing687w} 687w, ${DigitalMarketing1000w} 1000w, ${DigitalMarketing1359w} 1359w, ${DigitalMarketing2479w} 2479w `}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440px) 1359px, (min-width: 2560px) 2479px'
             alt='Second slide'
           />
 
@@ -91,8 +90,8 @@ const CarouselTopPage = () => {
           <img
             className='d-block img-fluid'
             src={SheratonHotel344w}
-            srcSet={`${SheratonHotel344w} 344w, ${SheratonHotel687w} 687w, ${SheratonHotel1000w} 1000px, ${SheratonHotel1359w} 1359w, ${SheratonHotel2479w} 2479w `}
-            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440) 1359px, (min-width: 2560) 2479px'
+            srcSet={`${SheratonHotel344w} 344w, ${SheratonHotel687w} 687w, ${SheratonHotel1000w} 1000w, ${SheratonHotel1359w} 1359w, ${SheratonHotel2479w} 2479w `}
+            sizes='(min-width: 425px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1000px, (min-width: 1440px) 1359px, (min-width: 2560px) 2479px'
             alt='Third slide'
           />
 
