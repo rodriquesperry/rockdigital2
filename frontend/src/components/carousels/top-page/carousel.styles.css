@@ -11,7 +11,7 @@
 
 .carousel-inner img {
   width: 344px;
-  height: auto;
+  height: 229px;
 }
 
 .carousel-inner .carousel-caption {
@@ -70,7 +70,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel-inner img {
     width: 687px;
-    height: auto;
+    height: 471px;
   }
 
   .carousel-inner .carousel-caption {
@@ -141,7 +141,7 @@
 
   .carousel-inner img {
     width: 1359px;
-    height: auto;
+    height: 629px;
   }
 
   .carousel-inner .carousel-caption {
@@ -249,7 +249,7 @@
 
   .carousel-inner img {
     width: 1359px;
-    height: auto;
+    height: 906px;
   }
 
   .carousel-inner .carousel-caption {
@@ -356,8 +356,8 @@
   }
 
   .carousel-inner img {
-    width: 1000px;
-    height: auto;
+    width: 2479px;
+    height: 1653px;
   }
 
   .carousel-inner .carousel-caption {
