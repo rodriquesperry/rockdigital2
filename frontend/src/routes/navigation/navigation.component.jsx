@@ -12,7 +12,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Footer from '../../components/footer/Footer.component';
 import Powered from '../../components/powered foooter/powered.component';
 
-import logo from '../../assets/RockDigitalLogo-450px.jpeg';
+import logo from '../../assets/RockDigitalLogo-196px.jpeg';
 
 import './navigation.styles.css';
 
