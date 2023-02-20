@@ -33,7 +33,7 @@ const CarouselTopPage = () => {
           <img
             className='d-block img-fluid web-design'
             fetchpriority='high'
-            src={WebDesign344w}
+            src={WebDesign239w}
             srcSet={`${WebDesign239w} 239w, ${WebDesign344w} 344w, ${WebDesign687w} 687w, ${WebDesign1359w} 1359w, ${WebDesign2479w} 2479w `}
             sizes='(min-width:320) 239px, (min-width: 375px) 344px, (min-width: 768px) 687px, (min-width: 1024px) 1359px, (min-width: 2560px) 2479px'
             alt='First slide'
