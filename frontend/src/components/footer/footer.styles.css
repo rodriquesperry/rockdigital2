@@ -91,8 +91,29 @@
   }
 
   .footer-container iframe {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-container .section {
+    padding: 5rem 1.5rem;
+    width: 100%;
+  }
+
+  .section .col-3 {
     width: 250px;
     height: 200px;
+  }
+
+  .footer-container iframe {
+    width: 350px;
+    height: 250px;
   }
 }
 
