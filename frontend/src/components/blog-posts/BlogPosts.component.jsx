@@ -30,6 +30,7 @@ const BlogPost = () => {
     <div className='posts'>
       {posts &&
         posts.map((post, i) => {
+          console.log(post.attributes.slug);
           if (!post.attributes.featured && i >= 2) {
             return (
               <Col md={6} lg={3} className='post-col' key={i}>

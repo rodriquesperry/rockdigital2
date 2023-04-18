@@ -13,12 +13,14 @@ const BlogPost = () => {
   const [authorImage, setAuthorImage] = useState({});
   const [featImage, setFeatImage] = useState({});
 
-  let { id } = useParams();
+  let { slug } = useParams();
 
   useEffect(() => {
     const getPost = () => {
       axios
-        .get(`https://rockdigital.agency/dashboard/api/posts/${id}?populate=*`)
+        .get(
+          `https://rockdigital.agency/dashboard/api/posts/${slug}?populate=*`
+        )
         .then((data) => {
           setPost(data.data.data.attributes);
           setAuthorImage(
@@ -31,7 +33,7 @@ const BlogPost = () => {
         .catch((error) => setError(error));
     };
     getPost();
-  }, [id]);
+  }, [slug]);
 
   const {
     publishedAt,
