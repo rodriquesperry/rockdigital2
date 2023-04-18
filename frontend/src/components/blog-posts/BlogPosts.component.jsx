@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -10,6 +11,7 @@ import './blogPosts.styles.css';
 const BlogPost = () => {
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
     const getPosts = async () => {
@@ -31,7 +33,7 @@ const BlogPost = () => {
           if (!post.attributes.featured && i >= 2) {
             return (
               <Col md={6} lg={3} className='post-col' key={i}>
-                <a href={`/blog/blogpost/${post.id}`}>
+                <a href={`/blog/blogpost/${post.attributes.slug}`}>
                   <Card>
                     <Card.Img
                       variant='top'

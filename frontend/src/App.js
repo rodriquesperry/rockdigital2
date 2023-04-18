@@ -36,7 +36,7 @@ function App() {
           <Route path='services' element={<Services />} />
           <Route path='/portfolio' element={<PortfolioPgae />} />
           <Route path='/blog' element={<Blog />} />
-          <Route path='/blog/blogpost/:id' element={<BlogPost />} />
+          <Route path='/blog/blogpost/:slug' element={<BlogPost />} />
           <Route path='/contact' element={<Contact />} />
         </Route>
       </Routes>
